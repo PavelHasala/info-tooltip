@@ -1,0 +1,171 @@
+@bg-color: #ffd906;
+
+.tooltip-info-bubble {
+  box-sizing: border-box;
+  background: @bg-color url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyVJREFUeNpifHmckwEHcPn5m5Hj0i0u84fP2dV+/WZkY2P9/0te8uctPbVvJ9lZ//8AqtmDTSMLNsOevmJTWLRFpPDIBR6tHz+ZMBSws/1jsDH4ciPa6+1kkCXohjO+OsEF5/z/z+CydJtw7qKtwn5//jAyEALMTP8Z4v3ebor2fDuZkRFhMHNpCivcwO5FEr2rdwvZ/fvHiNUAUcE/DN9/MoPUQvUwMpy/waX+6j2rgZX+lztAg+8hGwp2IchAbC4CGTan/mF8vO/baeLCf34cvcBjjCx/5zGHOAszg4Ce2vc3QO49cIA9eMautnCzsB8ub5pqf70gJvT7GYjNzfn3EzY1i7YI+4HMgbnUZcpKsYZ7TzhEcBn6+j2rhCDfn293nnDozForlvv1O2bk/QMGxeevzKp2xp9vsICSzbGLPBr4IuTDZ2aGjvmSGYQi7tB5HjWghTxMl29zmWJLNsiAl/svQ4Dj+xMZoa/XMOJJFKAUc/UupzHL8zescviSTITHu11Rnu+mcrL/+waK9XkbREKAGQGnwY9esKkwffzCLIRLQVPmsw4xoT/P2Fn/gXMPyAH4DASBH7+YuJigGrCCxllSFSt2CCUwMTH8A/HP3+SyJhSuAjx/3zHJS/66hUsByFV6qt8uwbLv+evcNoQMlRD5/YhJW/n7WRaW/zgVARP0KZDXQeF57gaXGj4DOdj/MeiqfjvNxM3574ud4RecrtVR/n4aRH/7wcTjbPbpSFPm0x5caoFZ9Qao9AKlpT0x3m8nsjBjuhYYlgxSYr8fQXLSvy86Kt/P9CySKMFa3AH1x3i9mwwyD1z0KUj9vBXn83bTvI0iKFn1HzB6dh7jC2ZiZAjceZwv7OItLgFcrozzfbsJZA5yeboHWDYyPHvDqrDjKL8esmKgy1IIRY63zcdzoOIPVq7Ciz5QsQUqvpiZGYQu3+ZUAxVrhAAogtOC3qxJDXrdgVyeohTSsKTz8DmbCrjkB+bl31gKa1agYbZGn28k+r3tlRb79QBvyY9uOKhwuHKH0/TxSzaln8CcwgbMKHISv+4AI+w0KOJw1VEAAQYAgfdM2Ssf1mMAAAAASUVORK5CYII=') no-repeat 10px 10px;
+  border-radius: 4px;
+  color: #000;
+  display: inline-block;
+  max-width: 300px;
+  opacity: 0;
+  left: -1000px;
+  padding: 11px 10px 10px 40px;
+  position: absolute;
+  transition: opacity 0.2s ease-in;
+  z-index: 1999;
+
+  &:after {
+    box-sizing: border-box;
+    content: ' ';
+    display: inline-block;
+    height: 0;
+    position: absolute;
+    width: 0;
+  }
+
+  &[data-visible] {
+    opacity: 1;
+  }
+}
+@media (max-width: 600px) {
+  .tooltip-info-bubble {
+    max-width: 200px;
+  }
+}
+/*                            POSITION OF TOOLTIP POINT.
+ * ------------------------------------------------------------------------------- 
+ */
+@size: 5px;
+@point-size: @size + (@size/2);
+@position-middle: ~"calc(50% - 6px)";
+
+.tooltip-info-bubble {
+  &[data-position='start'] {
+    .tib-pos-right&  { border-top-left-radius: 0; }
+    .tib-pos-left&   { border-top-right-radius: 0; }
+    .tib-pos-top&    { border-bottom-left-radius: 0; }
+    .tib-pos-bottom& { border-top-left-radius: 0; }
+  }
+
+  &[data-position='end'] {
+    .tib-pos-right&  { border-bottom-left-radius: 0; }
+    .tib-pos-left&   { border-bottom-right-radius: 0; }
+    .tib-pos-top&    { border-bottom-right-radius: 0; }
+    .tib-pos-bottom& { border-top-right-radius: 0; }
+  }
+
+  /**
+   * @Shape position middle
+   */
+  &[data-position='middle']:after {
+    /* <horizontal> */
+    .tib-pos-right&, .tib-pos-left& {
+      top: @position-middle;
+      border-top: @point-size solid transparent; 
+      border-bottom: @point-size solid transparent;
+    }
+    /* #Direction: right */
+    .tib-pos-right& {
+      left: -(2*@size);
+      border-right: (2*@size) solid @bg-color;
+    }
+    /* #Direction: left */
+    .tib-pos-left& {
+      right: -(2*@size);
+      border-left: (2*@size) solid @bg-color;
+    }
+
+    /* <vertical> */
+    .tib-pos-top&, .tib-pos-bottom& {
+      left: @position-middle;
+      border-left: @point-size solid transparent; 
+      border-right: @point-size solid transparent;
+    }
+    /* #Direction: top */
+    .tib-pos-top& {
+      bottom: -(2*@size);
+      border-top: (2*@size) solid @bg-color;
+    }
+    /* #Direction: bottom */
+    .tib-pos-bottom& {
+      top: -(2*@size);
+      border-bottom: (2*@size) solid @bg-color;
+    }
+  }
+
+  /**
+   * @Shape position start
+   */
+  &[data-position='start']:after {
+    /* <horizontal> */
+    .tib-pos-right&, .tib-pos-left& {
+      top: 0;
+      border-top: (2*@size) solid @bg-color;
+    }
+    /* #Direction: right */
+    .tib-pos-right& {
+      left: -(2*@size);
+      border-left: (2*@size) solid transparent;
+    }
+    /* #Direction: left */
+    .tib-pos-left& {
+      right: -(2*@size);
+      border-right: (2*@size) solid transparent;
+    }
+
+    /* <vertical> */
+    .tib-pos-top&, .tib-pos-bottom& {
+      left: 0;
+      border-right: (2*@size) solid transparent;
+    }
+    /* #Direction: top */
+    .tib-pos-top& {
+      bottom: -(2*@size);
+      border-top: (2*@size) solid @bg-color;
+    }
+    /* #Direction: bottom */
+    .tib-pos-bottom& {
+      top: -(2*@size);
+      border-bottom: (2*@size) solid @bg-color;
+    }
+  }
+
+  /**
+   * @Shape position end
+   */
+  &[data-position='end']:after {
+    /* <horizontal> */
+    .tib-pos-right&, .tib-pos-left& {
+      bottom: 0;
+    }
+    /* #Direction: right */
+    .tib-pos-right& {
+      left: -(2*@size);
+      border-right: (2*@size) solid @bg-color;
+      border-top: (2*@size) solid transparent;
+    }
+    /* #Direction: left */
+    .tib-pos-left& {
+      right: -(2*@size);
+      border-right: (2*@size) solid transparent;
+      border-bottom: (2*@size) solid @bg-color;
+    }
+
+    /* <vertical> */
+    .tib-pos-top&, .tib-pos-bottom& {
+      right: 0;
+    }
+    /* #Direction: top */
+    .tib-pos-top& {
+      bottom: -(2*@size);
+      border-left: (2*@size) solid transparent;
+      border-top: (2*@size) solid @bg-color;
+    }
+    /* #Direction: bottom */
+    .tib-pos-bottom& {
+      top: -(2*@size);
+      border-right: (2*@size) solid @bg-color;
+      border-top: (2*@size) solid transparent;
+    }
+  }
+}

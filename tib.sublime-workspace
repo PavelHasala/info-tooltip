@@ -1,0 +1,2053 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bubble",
+				"bubbleW〔variable〕"
+			],
+			[
+				"bu",
+				"bubbleW"
+			],
+			[
+				"bubb",
+				"bubbleH〔variable〕"
+			],
+			[
+				"tool",
+				"tooltip〔variable〕"
+			],
+			[
+				"tar",
+				"targetH〔variable〕"
+			],
+			[
+				"targe",
+				"targetH"
+			],
+			[
+				"_get",
+				"_getHorizontTopByPosition〔function〕"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"dev",
+				"dev.less"
+			],
+			[
+				"get",
+				"getOffsets"
+			],
+			[
+				"sty",
+				"style.less"
+			],
+			[
+				"dist",
+				"dist/"
+			],
+			[
+				"_targ",
+				"_targetH〔variable〕"
+			],
+			[
+				"_targe",
+				"_targetW〔variable〕"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"data-tib-",
+				"data-tib-direction"
+			],
+			[
+				"_con",
+				"_constant〔variable〕"
+			],
+			[
+				"_las",
+				"_lastUsedId"
+			],
+			[
+				"mes",
+				"messageCount"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"pos",
+				"pos-s\tposition: static;"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"mess",
+				"messageList〔variable〕"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"message",
+				"messageList〔variable〕"
+			],
+			[
+				"Prop",
+				"PropTypes.object"
+			],
+			[
+				"array",
+				"React.PropTypes.array"
+			],
+			[
+				"Mes",
+				"Messages"
+			],
+			[
+				"Mess",
+				"MessagesContainer"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"marin",
+				"margin-bottom"
+			],
+			[
+				"fons",
+				"font-size"
+			],
+			[
+				"compo",
+				"componentWillMount\t Life Cycle"
+			],
+			[
+				"sta",
+				"status〔variable〕"
+			],
+			[
+				"set",
+				"setState"
+			],
+			[
+				"ma",
+				"matchData"
+			],
+			[
+				"render",
+				"rendered"
+			],
+			[
+				"next",
+				"nextState〔variable〕"
+			],
+			[
+				"match",
+				"matchData〔variable〕"
+			],
+			[
+				"ini",
+				"initialMatchData"
+			],
+			[
+				"toBe",
+				"toBeTruthy"
+			],
+			[
+				"cha",
+				"channelId"
+			],
+			[
+				"mark",
+				"marketHtml"
+			],
+			[
+				"mar",
+				"marketIndex"
+			],
+			[
+				"math",
+				"matchData"
+			],
+			[
+				"new",
+				"newMarketData"
+			],
+			[
+				"upda",
+				"updatedMarket"
+			],
+			[
+				"in",
+				"initialMatchData"
+			],
+			[
+				"mt",
+				"matchData"
+			],
+			[
+				"mat",
+				"matchData〔variable〕"
+			],
+			[
+				"app",
+				"App.jsx"
+			],
+			[
+				"React",
+				"ReactPerf"
+			],
+			[
+				"exp",
+				"expect"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"matc",
+				"matchData"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"_di",
+				"_diffs〔variable〕"
+			],
+			[
+				"_diff",
+				"_diffs"
+			],
+			[
+				"spor",
+				"sportId〔variable〕"
+			],
+			[
+				"last",
+				"lastUpdateOperation〔variable〕"
+			],
+			[
+				"type",
+				"typeof〔keyword〕"
+			],
+			[
+				"SPORT",
+				"SPORT_DELETED"
+			],
+			[
+				"livespor",
+				"livesportDeletedMock"
+			],
+			[
+				"sport",
+				"sportId〔variable〕"
+			],
+			[
+				"live",
+				"liveEventsMap"
+			],
+			[
+				"spo",
+				"sportId〔variable〕"
+			],
+			[
+				"MAR",
+				"MARKET_DELETED"
+			],
+			[
+				"livespo",
+				"livesport.created.js"
+			],
+			[
+				"event",
+				"eventId〔variable〕"
+			],
+			[
+				"pro",
+				"promise"
+			],
+			[
+				"cat",
+				"catch〔keyword〕"
+			],
+			[
+				"reje",
+				"rejection〔variable〕"
+			],
+			[
+				"stat",
+				"status"
+			],
+			[
+				"expe",
+				"expect"
+			],
+			[
+				"act",
+				"actions"
+			],
+			[
+				"market",
+				"marketId〔variable〕"
+			],
+			[
+				"stop",
+				"stopPerf"
+			],
+			[
+				"rend",
+				"renderTime〔variable〕"
+			],
+			[
+				"eve",
+				"eventId〔variable〕"
+			],
+			[
+				"even",
+				"eventId"
+			],
+			[
+				"main",
+				"mainMarket"
+			],
+			[
+				"red",
+				"reducer"
+			],
+			[
+				"to",
+				"toBe"
+			],
+			[
+				"is",
+				"isObject"
+			],
+			[
+				"sor",
+				"sortedSports"
+			],
+			[
+				"tobe",
+				"toBeDefined"
+			],
+			[
+				"odds",
+				"odds"
+			],
+			[
+				"ac",
+				"actions"
+			],
+			[
+				"con",
+				"const〔keyword〕"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"be",
+				"bee\tbeforeEach"
+			],
+			[
+				"it",
+				"ite\tit"
+			],
+			[
+				"obj",
+				"Object"
+			],
+			[
+				"prop",
+				"propTypes\tProp Validation"
+			],
+			[
+				"update",
+				"updates"
+			],
+			[
+				"ave",
+				"averageRenderTime"
+			],
+			[
+				"las",
+				"lastUpdateTime"
+			],
+			[
+				"App",
+				"App.jsx"
+			],
+			[
+				"lastI",
+				"lastUpdateDiff"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"respo",
+				"responses〔variable〕"
+			],
+			[
+				"req",
+				"requestMock"
+			],
+			[
+				"top",
+				"topicsAPI"
+			],
+			[
+				"matches",
+				"matchesBySport"
+			],
+			[
+				"des",
+				"desce\tdescribe"
+			],
+			[
+				"up",
+				"updates"
+			],
+			[
+				"Rou",
+				"RouteComponent"
+			],
+			[
+				"ex",
+				"extends"
+			],
+			[
+				"matche",
+				"matchesBySport〔variable〕"
+			],
+			[
+				"init",
+				"initialData〔variable〕"
+			],
+			[
+				"initi",
+				"initialState"
+			],
+			[
+				"string",
+				"string\tReact.PropTypes.string"
+			],
+			[
+				"arr",
+				"array\tReact.PropTypes.array"
+			],
+			[
+				"obje",
+				"object\tReact.PropTypes.object"
+			],
+			[
+				"strin",
+				"string\tReact.PropTypes.string"
+			],
+			[
+				"ob",
+				"object\tReact.PropTypes.object"
+			],
+			[
+				"sub",
+				"subscribeChannels"
+			],
+			[
+				"ope",
+				"operation"
+			],
+			[
+				"M",
+				"MarketOdd"
+			],
+			[
+				"_new",
+				"_newState"
+			],
+			[
+				"m",
+				"mainMarket"
+			],
+			[
+				"_ma",
+				"_markers〔variable〕"
+			],
+			[
+				"_mar",
+				"_markets〔variable〕"
+			],
+			[
+				"componentWill",
+				"componentWillUnmount\tLife Cycle Method"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/style.less",
+			"settings":
+			{
+				"buffer_size": 5342,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main.js",
+			"settings":
+			{
+				"buffer_size": 4096,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/lib/getPosition.js",
+			"settings":
+			{
+				"buffer_size": 2939,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/getOuterDimensions.js",
+			"settings":
+			{
+				"buffer_size": 734,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "todo",
+		"selected_items":
+		[
+			[
+				"todo",
+				"TodoReview: Project and Open Files"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"forrmat",
+				"ESLint Formatter: Format this file"
+			],
+			[
+				"formater",
+				"ESLint Formatter: Format this file"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"eslint",
+				"ESLint Formatter: Format this file"
+			],
+			[
+				"eslin",
+				"Build With: ESLint"
+			],
+			[
+				"test",
+				"Set Syntax: JavaScript (Test)"
+			],
+			[
+				"jasmine",
+				"Set Syntax: Jasmine"
+			],
+			[
+				"test)",
+				"Set Syntax: JavaScript (Test)"
+			],
+			[
+				"synt java",
+				"Set Syntax: JavaScript (Test)"
+			],
+			[
+				"babel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"Snippet: it",
+				"Snippet: it"
+			],
+			[
+				"babe",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"syntax jest",
+				"Set Syntax: Jasmine CoffeeScript"
+			],
+			[
+				"react",
+				"Set Syntax: React JSX"
+			],
+			[
+				"syntax jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"json",
+				"Pretty JSON: Validate"
+			],
+			[
+				"synta",
+				"Set Syntax: Lua"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"syntas JS",
+				"Set Syntax: JavaScript (Rails)"
+			],
+			[
+				"syntax less",
+				"Set Syntax: LESS"
+			],
+			[
+				"rempve",
+				"Package Control: Remove Package"
+			],
+			[
+				"less",
+				"Set Syntax: Less"
+			],
+			[
+				"sassb",
+				"SassBeautify"
+			],
+			[
+				"syntax sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"syntax reac",
+				"Set Syntax: React Templates"
+			],
+			[
+				"syntax java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntax css",
+				"Set Syntax: CSS"
+			],
+			[
+				"Snippet: sc",
+				"Snippet: script src tag"
+			],
+			[
+				"package reso",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"syntax json",
+				"Set Syntax: JSON"
+			],
+			[
+				"todor",
+				"TodoReview: Project Files"
+			],
+			[
+				"text",
+				"Set Syntax: Textile"
+			],
+			[
+				"syntax",
+				"Set Syntax: YAML"
+			],
+			[
+				"syntax j",
+				"Set Syntax: JSON"
+			],
+			[
+				"todo ew",
+				"TodoReview: Project Files"
+			],
+			[
+				"todo revoe",
+				"TodoReview: Project Files"
+			],
+			[
+				"review",
+				"TodoReview: Project Files"
+			],
+			[
+				"todo re",
+				"TodoReview: Project Files"
+			],
+			[
+				"syntax javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntax jva",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"gr",
+				"Grunt"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"angula",
+				"Set Syntax: HTML (Angular.js)"
+			],
+			[
+				"te",
+				"Set Syntax: Textile"
+			],
+			[
+				"pret",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instla",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Discover Packages"
+			],
+			[
+				"Snippet: jsd",
+				"Snippet: jsdoc"
+			],
+			[
+				"Snippet: jsdo",
+				"Snippet: jsdoc"
+			],
+			[
+				"Snippet: jsdoc",
+				"Snippet: jsdoc"
+			],
+			[
+				"Snippet: js",
+				"Snippet: jsdoc"
+			],
+			[
+				"Snippet: ",
+				"Snippet: for (…) {…}"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"git clone git://github.com/vhanla/SublimeTextTrans.git \"%APPDATA%\\Sublime Text 2\\Packages\\SublimeTextTrans\"",
+			"`git clone git://github.com/vhanla/SublimeTextTrans.git \"%APPDATA%\\Sublime Text 2\\Packages\\SublimeTextTrans\"`",
+			"grunt watch",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/build",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/src",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/src/lib"
+	],
+	"file_history":
+	[
+		"/Users/hakim/Library/Application Support/Sublime Text 3/Packages/User/TodoReview.sublime-settings",
+		"/Users/hakim/Library/Application Support/Sublime Text 3/Packages/TodoReview/TodoReview.sublime-settings",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/build/index.html",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/webpack.prod.config.js",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/webpack.dev.config.js",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/package.json",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/src/_dev/dev.less",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/src/_dev/dev.css",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/build/tib.js",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/src/main.js",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/src/style.less",
+		"/Users/hakim/Sites/DOODLINGS/t/webpack.dev.config.js",
+		"/Users/hakim/Sites/WORK/ai-mitler-fe/config/webpack.config.dev.js",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/index.html",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/dist/getOuterDimensions.js",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/dist/tooltip-info-bubble.js",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/src/getOuterDimensions.js",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/dist/tooltip-info-bubble.css",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/tooltip-info-bubble.css",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/bubble.less",
+		"/Users/hakim/Downloads/tipped-4.5.7-light/js/tipped/tipped.js",
+		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/object.assign.polyfill.js",
+		"/Users/hakim/Downloads/font-awesome-4.7.0/css/font-awesome.css",
+		"/Users/hakim/Sites/DOODLINGS/horizon-app/src/index.css",
+		"/Users/hakim/Sites/DOODLINGS/horizon-app/src/App.css",
+		"/Users/hakim/Sites/DOODLINGS/horizon-app/src/components/Optimistic.jsx",
+		"/Users/hakim/Sites/DOODLINGS/horizon-app/src/components/SetOptimistic/Modul.jsx",
+		"/Users/hakim/Sites/DOODLINGS/horizon-app/public/index.html",
+		"/Users/hakim/Sites/DOODLINGS/horizon-app/src/index.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/restAPI/restAPI.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/restAPI/__tests__/restAPI.test.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/restAPI/__mocks__/responses.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/package.json",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/config/setupJest.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/topicsAPI/topicsAPI.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/sportList/SportList.SportItem.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/common/matchesBySport/__mocks__/liveevent.updated.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/productionPerf.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/sportList/SportList.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/index.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/.babelrc",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/config/reducers.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/matchList/MatchDetail.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/app/App.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/common/matchesBySport/reducer.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/config/mapDispatchToProps.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live-0.70/src/components/app/App.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/public/index.html",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/overview/Overview.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live-0.70/src/lib/productionPerf.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/app/_Measuring.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/matchList/MatchList.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/sportList/SportDetail.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/common/matchesBySport/actions.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/common/matchesBySport/__tests__/actions.test.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/common/matchesBySport/__tests__/reducer.test.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/common/matchesBySport/__mocks__/livesport.deleted.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/common/matchesBySport/__mocks__/liveevent.deleted.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/common/matchesBySport/__mocks__/liveevent.created.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/common/matchesBySport/__mocks__/livesport.created.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/request.js",
+		"/Users/hakim/Library/Application Support/Sublime Text 3/Packages/User/ESLint-Formatter.sublime-settings",
+		"/Users/hakim/Library/Application Support/Sublime Text 3/Packages/ESLint/Default (OSX).sublime-keymap",
+		"/Users/hakim/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/Default (OSX).sublime-keymap",
+		"/Users/hakim/Library/Application Support/Sublime Text 3/Packages/ESLint/ESLint.sublime-settings",
+		"/Users/hakim/Library/Application Support/Sublime Text 3/Packages/ESLint-Formatter/ESLint-Formatter.sublime-settings",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/config/polyfills.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/config/configureStore.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/App.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/restAPI/restAPI.test.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/app/__tests__/App.test.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/sportList/__tests__/SportList.test.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/config/mapStateToProps.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/common/markets/__tests__/reducer.test.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/common/markets/actions.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/common/markets/reducer.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/common/markets/__tests__/actions.test.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/common/markets/reducer.test.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/sl3.sublime-project",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/config/routes.js",
+		"/Users/hakim/Library/Application Support/Sublime Text 3/Packages/Jasmine JS/Jasmine.sublime-settings",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/restAPI/__mocks__/getInitialState.mock.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/topicsAPI/topicsAPI.test.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/common/markets/actions.test.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/connectService.mock.js",
+		"/Users/hakim/Library/Application Support/Sublime Text 3/Packages/Jasmine JS/snippets/single-quotes/describeESNext.sublime-snippet",
+		"/Users/hakim/Library/Application Support/Sublime Text 3/Packages/Jasmine JS/snippets/double-quotes/it.sublime-snippetx",
+		"/Users/hakim/Dropbox/App/Sublime/User/define_module.sublime-snippet",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/connectService.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/overview/actions.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/overview/actions.test.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/build/static/js/main.9ff2d111.js.map",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/app/actions.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/overview/reducer.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/app/reducer.js",
+		"/Users/hakim/Sites/WORK/EON/src/server/frontend/render.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/WhyDidYouUpdateMixin.js",
+		"/Users/hakim/Sites/WORK/ai-mitler-fe/build/index.html",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/App.test.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/scripts/test.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/scripts/start.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/README.md",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/AppContainer.jsx",
+		"/Users/hakim/Sites/DOODLINGS/fortuna-sazky-live/public/index.html",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/index.html",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/index.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/matchList/MatchList.MatchItem.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/webpack.config.js",
+		"/Users/hakim/Sites/WORK/EON/webpack/makeConfig.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/404/404.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/matchDetail/MatchDetail.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/MatchList/MatchDetail.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/sportList/SportList.Sport.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/sportList/Sport.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/sportDetail/SportDetail.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/sportList/SportList.Match.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/sportList/Match.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/config/reducer.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/RouterHandler.jsx",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/app.js",
+		"/Users/hakim/Sites/WORK/EON/build/index.html",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/node_modules/stompjs/lib/stomp.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/node_modules/stompjs/index.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/requestWSConnection.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/service.js",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/assets/less/styles.less",
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/server.js",
+		"/Users/hakim/Sites/WORK/aimitler/build/index.html"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 94.0,
+		"where_history":
+		[
+			"/Users/hakim/Sites/DOODLINGS/horizon-app/src",
+			"/Users/hakim/Sites/DOODLIGS/horizon-app/src",
+			"/Users/hakim/Sites/WORK/fortuna-sazky-live/src",
+			"/Users/hakim/Sites/WORK/fortuna-sazky-live",
+			"/Users/hakim/Sites/WORK/fortuna-sazky-live/src",
+			"/Users/hakim/Sites/WORK/fortuna-sazky-live",
+			"/Users/hakim/Sites/WORK/fortuna-sazky-live/src",
+			"/Users/hakim/Sites/WORK/fortuna-sazky-live",
+			"/Users/hakim/Sites/WORK/fortuna-sazky-live/src",
+			"/Users/hakim/Sites/WORK/aimitler/src",
+			"/Users/hakim/Sites/WORK/EON/src",
+			"/Users/hakim/Sites/PERSONAL/ondra-provaznik",
+			"/Users/hakim/Sites/PERSONAL/ondra/",
+			"/Users/hakim/Sites/PERSONAL/ondra/src",
+			"/Users/hakim/Sites/WORK/EON/src",
+			"/Users/hakim/Sites/WORK/EON",
+			"/Users/hakim/Sites/WORK/SKODA/visionc-dashboard-2.0/www/assets/src/js",
+			"/Users/hakim/Sites/WORK/SKODA/visionc-dashboard-2.0/www/assets/js",
+			"/Users/hakim/Sites/WORK/SKODA/visionc-dashboard-2.0/www/assets/src/less",
+			"/Users/hakim/Sites/WORK/SKODA/visionc-dashboard-2.0/www/assets/src/js",
+			"/Users/hakim/Sites/WORK/SKODA/visionc-dashboard-2.0/www/assets/src",
+			"/Users/hakim/Sites/WORK/SKODA/visionc-dashboard-2.0/www/assets/src/less",
+			"/Users/hakim/Sites/SKODA/visionc-dashboard-2.0/www/assets/src/less",
+			"/Users/hakim/Dropbox/Sites/SKODA/visionc-dashboard-2.0/www/assets/src/less",
+			"/Users/hakim/Dropbox/Sites/SKODA/visionc-dashboard-2.0/www/assets/src/js",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"_site",
+			"\"",
+			"return",
+			"_pointer",
+			"pointer",
+			"bubbleH",
+			"_Xdistance",
+			"-",
+			"+",
+			"bubbleH",
+			"_distance",
+			"position)",
+			"Top",
+			"_targetW",
+			"this",
+			"getOff",
+			"_",
+			"var ",
+			"_getPositionTop",
+			"var ",
+			"_bubbleW",
+			"_scrollX",
+			"_targetH",
+			"_bubbleH",
+			"_scrollY",
+			"_elemRect",
+			"_bodyRect",
+			"_getPositionTop",
+			"_topPosOffset",
+			"getPositionTop",
+			"_getOffsets",
+			"getOffsets",
+			"\"",
+			"calc",
+			"calc(",
+			"-ms-",
+			"2*@size",
+			"build",
+			"tooltip-info-bubble",
+			"./index_files",
+			"dist/",
+			"tooltip-info-bubble",
+			"sourcemap",
+			"dist",
+			"addEv",
+			"getPositionTop",
+			"http://localhost:1234",
+			"this.removeAttribute",
+			"bubbleElm",
+			"start",
+			"transparent",
+			"@bg-color",
+			"left",
+			"right",
+			"middle",
+			"@vertical-middle",
+			"position-middle",
+			"left",
+			"right",
+			"left",
+			"@size",
+			"data-tib-position",
+			"_positionsMap",
+			"end",
+			"middle",
+			"start",
+			"position",
+			"left",
+			"classlist",
+			"middle",
+			"-2*@size",
+			"@size",
+			".tooltip-info-bubble",
+			"-@size",
+			"6px",
+			"50px",
+			".tooltip-info-bubble",
+			"24px",
+			"50px",
+			"<h3>",
+			"span",
+			"<p>",
+			"‐ ",
+			".",
+			"type=",
+			"type",
+			"?v=4.7.0",
+			"0')",
+			"')",
+			"font.",
+			"../fonts/",
+			"fontawesome-webfont",
+			", url",
+			" style=\"list-style: none; list-style-type: none;\"",
+			" style=\"list-style-type: none; list-style: none;\"",
+			"{hzMessages",
+			"hzMessages=",
+			"hzMessages",
+			"selected",
+			"<input",
+			".App",
+			"p",
+			"pre",
+			"hz_messages",
+			"messageElm",
+			"Messages",
+			"message",
+			";",
+			"div",
+			";",
+			"changedMarketIds:",
+			"changedMarketIds",
+			"rendered",
+			"[",
+			"jest",
+			";",
+			"diff",
+			"haveChanges",
+			"changes",
+			".markets",
+			"matchData",
+			"newMarkets",
+			"updatedMarket",
+			"newMatchData",
+			"newMarketData",
+			"marketId",
+			"market",
+			"response."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"b",
+			"'",
+			"\",\n",
+			"CREATED",
+			"sportCreated",
+			"marketCreated",
+			"sportAdded",
+			"marketDeleted",
+			"marketAdded",
+			"marketUpdated",
+			"updateMarket",
+			"addMarket",
+			"/matchesBySport",
+			"matchesBySport",
+			"sportsList",
+			"/topicsAPI/topicsAPI'",
+			"/connectService/services'",
+			"updateMainMarket",
+			" markets:{matchesBySport}",
+			"sport",
+			"/component",
+			".RF-tooltip",
+			"RF-INVALID",
+			"\"RF-placeholder",
+			"\"fr-placeholder",
+			"gaPushData\n",
+			";\n",
+			">{msg.labels.houseNumber}<",
+			">{msg.labels.descNumber}<",
+			"{msg.labels.descNumber}",
+			"{msg.labels.houseNumber}",
+			"label={msg.labels.ZIP}",
+			"label={msg.labels.street}",
+			"label={msg.labels.cityPart}",
+			"label={msg.labels.city}",
+			";\n",
+			"text-red",
+			"updateServiceTypeCount",
+			"UPDATE_SERVICE_TYPE_COUNTER",
+			"grid-col",
+			"",
+			"contractId",
+			"msg.I1.",
+			"payload: {contractId,\tdata}",
+			"contractId: PropTypes.string.isRequired",
+			"propTypes = {",
+			"contract-tab__content",
+			"places",
+			"_d-none",
+			"render()",
+			"    \"",
+			"    ",
+			"",
+			";\n",
+			"FormElements.react';",
+			"FormElements.react",
+			"maxlength",
+			".setIn(",
+			".setIn(['error']",
+			"step1Fields",
+			"PropTypes.bool",
+			"static propTypes",
+			"a3",
+			"A3",
+			"VERIFY",
+			"VERIFY_CLIENT_",
+			"verifyMethod",
+			"verifykMethod",
+			"verify",
+			"check",
+			"../../components/FormElements",
+			"info",
+			"client",
+			"../../components/serviceAPI",
+			"20px",
+			"overeniZakaznika",
+			"\t",
+			"/",
+			"modules/content",
+			"modules/content/",
+			" {",
+			"",
+			"\t",
+			"Ř",
+			"ů",
+			"ě",
+			"č",
+			"ř",
+			"Schema",
+			"schema",
+			"\t",
+			"websocket",
+			"\t",
+			"%>",
+			"ň",
+			"Ř",
+			"Č",
+			"í",
+			"ž",
+			"Š",
+			"Č",
+			"č",
+			"ů",
+			"ě",
+			"ů",
+			"ě",
+			"ř",
+			"ď",
+			"ů",
+			"Ř",
+			"č",
+			"ě",
+			"ř",
+			"conf.VIEWPORT_SELECTOR_CLASS",
+			"ď",
+			"ě",
+			"ř",
+			"ů",
+			"č",
+			"Č",
+			"ď",
+			"ň",
+			"ů",
+			"ř",
+			"č",
+			"ě",
+			"ů",
+			"Ř"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/style.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5342,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1440,
+								1440
+							]
+						],
+						"settings":
+						{
+							"git_gutter_enabled": false,
+							"syntax": "Packages/Theme - Seti Monokai/icons/Langs/Less.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4096,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2945,
+								2945
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"git_gutter_enabled": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1057.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/lib/getPosition.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2939,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"auto_complete": false,
+							"git_gutter_enabled": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/getOuterDimensions.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 734,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								609,
+								609
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"git_gutter_enabled": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 350.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "tib.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ind",
+				"build/index.html"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"dev",
+				"webpack.dev.config.js"
+			],
+			[
+				"_dev",
+				"src/_dev/dev.less"
+			],
+			[
+				"prod",
+				"webpack.prod.config.js"
+			],
+			[
+				"we",
+				"webpack.dev.config.js"
+			],
+			[
+				"webp",
+				"webpack.dev.config.js"
+			],
+			[
+				"pro",
+				"webpack.prod.config.js"
+			],
+			[
+				"main",
+				"src/main.js"
+			],
+			[
+				"style",
+				"src/style.less"
+			],
+			[
+				"web",
+				"webpack.dev.config.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"ine",
+				"index.css"
+			],
+			[
+				"ap",
+				"App.css"
+			],
+			[
+				"inde",
+				"index.css"
+			],
+			[
+				"index",
+				"index.css"
+			],
+			[
+				"in",
+				"index.js"
+			],
+			[
+				"app",
+				"App.css"
+			],
+			[
+				"css",
+				"App.css"
+			],
+			[
+				"rest",
+				"src/lib/restAPI/restAPI.js"
+			],
+			[
+				"restapi",
+				"src/lib/restAPI/__tests__/restAPI.test.js"
+			],
+			[
+				"top",
+				"src/lib/topicsAPI/topicsAPI.js"
+			],
+			[
+				"topic",
+				"src/lib/topicsAPI/topicsAPI.js"
+			],
+			[
+				"match",
+				"src/components/matchList/MatchDetail.jsx"
+			],
+			[
+				"sportite",
+				"src/components/sportList/SportList.SportItem.jsx"
+			],
+			[
+				"sport",
+				"src/components/sportList/SportList.jsx"
+			],
+			[
+				"per",
+				"src/lib/productionPerf.js"
+			],
+			[
+				"babel",
+				".babelrc"
+			],
+			[
+				"reduc",
+				"src/common/matchesBySport/__tests__/reducer.test.js"
+			],
+			[
+				"reduce",
+				"src/config/reducers.js"
+			],
+			[
+				"ma",
+				"src/components/matchList/MatchDetail.jsx"
+			],
+			[
+				"reducer",
+				"src/common/matchesBySport/reducer.js"
+			],
+			[
+				"mapd",
+				"src/config/mapDispatchToProps.js"
+			],
+			[
+				"topics",
+				"src/lib/topicsAPI/topicsAPI.js"
+			],
+			[
+				"spor",
+				"src/components/sportList/SportList.jsx"
+			],
+			[
+				"meas",
+				"src/components/app/_Measuring.jsx"
+			],
+			[
+				"matchlis",
+				"src/components/matchList/MatchList.jsx"
+			],
+			[
+				"over",
+				"src/components/overview/Overview.jsx"
+			],
+			[
+				"overv",
+				"src/components/overview/Overview.jsx"
+			],
+			[
+				"req",
+				"src/lib/request.js"
+			],
+			[
+				"restap",
+				"src/lib/restAPI/__tests__/restAPI.test.js"
+			],
+			[
+				"reducer.test",
+				"src/common/matchesBySport/__tests__/reducer.test.js"
+			],
+			[
+				"actions",
+				"src/common/matchesBySport/__tests__/actions.test.js"
+			],
+			[
+				"conf",
+				"src/config/configureStore.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"app.tes",
+				"src/components/app/__tests__/App.test.js"
+			],
+			[
+				"reducers",
+				"src/config/reducers.js"
+			],
+			[
+				"reducr",
+				"src/config/reducers.js"
+			],
+			[
+				"action",
+				"src/common/markets/actions.js"
+			],
+			[
+				"sportlist",
+				"src/components/sportList/SportList.SportItem.jsx"
+			],
+			[
+				"item",
+				"src/components/sportList/SportList.SportItem.jsx"
+			],
+			[
+				"markers",
+				"src/common/markets/reducer.js"
+			],
+			[
+				"marke",
+				"src/common/markets/reducer.js"
+			],
+			[
+				"sporti",
+				"src/components/sportList/SportList.SportItem.jsx"
+			],
+			[
+				"pa",
+				"package.json"
+			],
+			[
+				"sportitem",
+				"src/components/sportList/SportList.SportItem.jsx"
+			],
+			[
+				"appte",
+				"src/components/app/__tests__/App.test.js"
+			],
+			[
+				"route",
+				"src/config/routes.js"
+			],
+			[
+				"topi",
+				"src/lib/topicsAPI/topicsAPI.js"
+			],
+			[
+				"res",
+				"src/lib/restAPI/restAPI.js"
+			],
+			[
+				"resst",
+				"src/lib/restAPI/restAPI.test.js"
+			],
+			[
+				"api",
+				"src/lib/topicsAPI/topicsAPI.js"
+			],
+			[
+				"reques",
+				"src/lib/request.js"
+			],
+			[
+				"mapt",
+				"src/config/mapDispatchToProps.js"
+			],
+			[
+				"conne",
+				"src/lib/connectService.js"
+			],
+			[
+				"test.js",
+				"scripts/test.js"
+			],
+			[
+				"app.te",
+				"src/App.test.js"
+			],
+			[
+				"matchde",
+				"src/components/matchList/MatchDetail.jsx"
+			],
+			[
+				"maps",
+				"src/config/mapStateToProps.js"
+			],
+			[
+				"bab",
+				".babelrc"
+			],
+			[
+				"babe",
+				".babelrc"
+			],
+			[
+				"rout",
+				"src/config/routes.js"
+			],
+			[
+				"confi",
+				"src/config/configureStore.js"
+			],
+			[
+				"mapts",
+				"src/config/mapStateToProps.js"
+			],
+			[
+				"sprotlist",
+				"src/components/sportList/SportList.jsx"
+			],
+			[
+				"conn",
+				"src/lib/connectService.js"
+			],
+			[
+				"webpa",
+				"webpack.config.js"
+			],
+			[
+				"matchdet",
+				"src/components/matchList/MatchDetail.jsx"
+			],
+			[
+				"matchdeta",
+				"src/components/matchList/MatchDetail.jsx"
+			],
+			[
+				"404",
+				"src/components/404/404.jsx"
+			],
+			[
+				"matchlist",
+				"src/components/matchList/MatchList.jsx"
+			],
+			[
+				"matchi",
+				"src/components/matchList/MatchList.MatchItem.jsx"
+			],
+			[
+				"servi",
+				"src/lib/connectService.js"
+			],
+			[
+				"matchli",
+				"src/components/matchList/MatchList.jsx"
+			],
+			[
+				"sportl",
+				"src/components/sportList/SportList.jsx"
+			],
+			[
+				"actio",
+				"src/components/app/actions.js"
+			],
+			[
+				"rou",
+				"fortuna-sazky-live/src/config/routes.js"
+			],
+			[
+				"ste",
+				"fortuna-sazky-live/src/config/mapStateToProps.js"
+			],
+			[
+				"appredu",
+				"fortuna-sazky-live/src/components/app/reducer.js"
+			],
+			[
+				"map",
+				"fortuna-sazky-live/src/config/mapDispatchToProps.js"
+			],
+			[
+				"overviewre",
+				"src/components/overview/reducer.js"
+			],
+			[
+				"serv",
+				"server.js"
+			],
+			[
+				"ser",
+				"aimitler/server.js"
+			],
+			[
+				"rooms",
+				"aimitler/src/pages/rooms/Rooms.react.js"
+			],
+			[
+				"st",
+				"css/styles.css"
+			],
+			[
+				"styl",
+				"css/styles.css"
+			],
+			[
+				"syle",
+				"css/styles.css"
+			],
+			[
+				"test",
+				"aimitler/test/test1.js"
+			],
+			[
+				"home",
+				"aimitler/src/Home.jsx"
+			],
+			[
+				"ho",
+				"aimitler/src/Home.jsx"
+			],
+			[
+				"row",
+				"aimitler/src/components/data-grid/DataGridRow.react.js"
+			],
+			[
+				"styles",
+				"css/styles.css"
+			],
+			[
+				"vill",
+				"src/components/villains/Villains.react.js"
+			],
+			[
+				"vil",
+				"src/components/villains/Villains.react.js"
+			],
+			[
+				"datag",
+				"src/components/data-grid/DataGrid.react.js"
+			],
+			[
+				"data",
+				"src/components/data-grid/DataGridRow.react.js"
+			],
+			[
+				"boi",
+				"src/browser/modules/I1/boilerBrands.js"
+			],
+			[
+				"boilerin",
+				"src/browser/modules/I1/BoilerInfo.react.js"
+			],
+			[
+				"e2",
+				"src/browser/modules/E2/Module.react.js"
+			],
+			[
+				"i2",
+				"src/browser/modules/I2/Module.react.js"
+			],
+			[
+				"i1modu",
+				"src/browser/modules/I1/Module.react.js"
+			],
+			[
+				"order",
+				"src/browser/forms/servisKotlu/orderForm/OrderForm.react.js"
+			],
+			[
+				"anal",
+				"src/browser/lib/analytics.js"
+			],
+			[
+				"load",
+				"src/browser/loadApp.js"
+			],
+			[
+				"client",
+				"src/browser/forms/servisKotlu/ClientVerifyType.react.js"
+			],
+			[
+				"a1modu",
+				"src/browser/modules/A1/Module.react.js"
+			],
+			[
+				"offta",
+				"src/browser/forms/servisKotlu/orderForm/OfftakePlaces.react.js"
+			],
+			[
+				"analy",
+				"src/browser/lib/analytics.js"
+			],
+			[
+				"a1",
+				"src/browser/modules/A1/Step1.react.js"
+			],
+			[
+				"form",
+				"src/browser/lib/formHelpers.js"
+			],
+			[
+				"mai",
+				"src/browser/main.js"
+			],
+			[
+				"formele",
+				"src/browser/components/FormElements.react.js"
+			],
+			[
+				"validat",
+				"src/browser/components/ValidationBubble.react.js"
+			],
+			[
+				"mixi",
+				"src/browser/app/styles/mixins.less"
+			],
+			[
+				"form-ele",
+				"src/browser/app/styles/components/form-elements.less"
+			],
+			[
+				"toolt",
+				"src/browser/components/Tooltip/Tooltips.less"
+			],
+			[
+				"formste",
+				"src/browser/components/FormStepper.less"
+			],
+			[
+				"i1",
+				"src/browser/modules/I1/I1.less"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 279.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

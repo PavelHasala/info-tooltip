@@ -1,0 +1,15 @@
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# production
+build/tib.css
+build/tib.js
+
+# misc
+.DS_Store
+.env
+npm-debug.log
+stats.json
