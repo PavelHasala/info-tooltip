@@ -89,7 +89,7 @@
 
     bubble.show = function () {
       var _offsets = getOffsets(this)
-      console.log(_offsets)
+      if (DEV) { console.log(_offsets) }
       if (this.target.title) {
         this.target.title = ''
       }

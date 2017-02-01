@@ -13,3 +13,4 @@ build/tib.js
 .env
 npm-debug.log
 stats.json
+*.sublime-workspace

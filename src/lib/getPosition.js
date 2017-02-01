@@ -8,8 +8,14 @@ var _getTopByDirection = function (direction, position) {
   switch (direction) {
     case 'left':
     case 'right':
-        return Ydistance + (targetH / 2) - _getHorizontTopByPosition(position)
+        return Ydistance + (targetH/2) - _getHorizontTopByPosition(position)
       break;
+    case 'top': 
+        return Ydistance - bubbleH - pointer
+      break
+    case 'bottom': 
+        return Ydistance + targetH + pointer
+      break
   }
 }
 
@@ -24,6 +30,10 @@ var _getHorizontTopByPosition = function (position) {
 var _getLeftByDirection = function (direction, position) {
   var XDistance = elemRect.left + scrollX
   switch (direction) {
+    case 'top':
+    case 'bottom':
+        return XDistance + bodyRect.left + (targetW/2) - pointer - _getVerticalLeftByPosition(position)
+      break
     case 'right':
         return XDistance + bodyRect.left + targetW + pointer
       break;
@@ -68,30 +78,7 @@ var getOffsets = function (tooltip) {
   return {
       left: _getLeftByDirection(tooltip.direction, tooltip.position)
     , top: _getTopByDirection(tooltip.direction, tooltip.position)
-  }    
-    
-    // case 'left':
-    //   return {
-    //     left: elemRect.left - tooltip.target.offsetWidth - (bodyRect.left * 2) - _constant,
-    //     top: elemRect.top - (tooltip.bubbleElm.offsetHeight / 2) + (bodyRect.top)
-    //   }
-    //   break
-
-    // case 'top':
-    //   return {
-    //     left: elemRect.left + scrollX + bodyRect.left,
-    //     top: elemRect.top + scrollY - bubbleH - outerHeight(tooltip.target) + bodyRect.top
-    //   }
-
-    // case 'bottom':
-    //   return {
-    //     left: elemRect.left + (bodyRect.left * 2),
-    //     top: elemRect.top + tooltip.bubbleElm.offsetHeight - (bodyRect.top) - _constant
-    //   }
-
-  //   default: 
-  //     return { left : 0, top: 0 }
-  // }
+  }
 }
 
 module.exports = getOffsets
