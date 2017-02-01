@@ -1,6 +1,6 @@
 {
   "name": "customisable-tooltip",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Customisable tooltips with various position.",
   "main": "src/main.js",
   "scripts": {
