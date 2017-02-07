@@ -1,17 +1,17 @@
 {
   "name": "customisable-tooltip",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Customisable tooltips with various position.",
   "main": "src/main.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.dev.config.js --port 1337 --hot --colors --progress --no-info --open --inline ",
+    "dev": "webpack-dev-server --config webpack.dev.config.js --port 1337 --hot --colors --progress --no-info --inline ",
     "test": "jest --watch",
-    "build": "jest && webpack --config webpack.prod.config.js -p && lessc src/style.less build/tib.css"
+    "build": "jest && webpack --config webpack.prod.config.js"
   },
   "dependencies": {},
   "devDependencies": {
     "css-loader": "^0.26.1",
-    "extract-text-webpack-plugin": "^1.0.1",
+    "extract-text-webpack-plugin": "2.0.0",
     "jest": "^18.1.0",
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
@@ -20,8 +20,9 @@
     "precss": "^1.4.0",
     "sinon": "^1.17.7",
     "style-loader": "^0.13.1",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
+    "webpack": "^2.2.1",
+    "webpack-bundle-analyzer": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
   },
   "author": "pavel.hasala@etnetera.cz",
   "license": "ISC"
