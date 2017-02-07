@@ -1,3 +1,4 @@
+//TODO: remove harcoded top and left position when hiding a bubble
 ;(function () {
   require('./less/main.less')
   DEV && console.log('DEV MODE')
@@ -105,8 +106,8 @@
     
       this.visible = false;
       this.bubbleElm.removeAttribute('data-visible')
-      this.bubbleElm.style.top = '0px'
-      this.bubbleElm.style.left = ''
+      this.bubbleElm.style.top = '-10000px'
+      this.bubbleElm.style.left = '-10000px'
     }
   }
 
