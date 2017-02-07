@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Tooltip info bubble</title>
-  <link rel="stylesheet" href="./tib.css">
+  <style type="text/css" media="screen">
+    body {
+      background-color: #333;
+      color: #fff;
+    }
+    input {
+      padding: 10px;
+      font-size: 13px;
+      margin: 20px 0;
+    }
+    input[name='centered'] {
+      margin-left: 300px;
+    }
+    fieldset { width: 200px; float: left; margin-bottom: 10px; }
+    hr { clear: both; }
+  </style>
 </head>
 <body>
   <fieldset>
@@ -46,7 +61,41 @@
   <br>
   <br>
 
-  <script src="./object.assign.polyfill.js"></script>
+  <!--Object.assign -->
+  <script>
+    if (!Object.assign) {
+      Object.defineProperty(Object, 'assign', {
+        enumerable: false,
+        configurable: true,
+        writable: true,
+        value: function(target) {
+          'use strict';
+          if (target === undefined || target === null) {
+            throw new TypeError('Cannot convert first argument to object');
+          }
+
+          var to = Object(target);
+          for (var i = 1; i < arguments.length; i++) {
+            var nextSource = arguments[i];
+            if (nextSource === undefined || nextSource === null) {
+              continue;
+            }
+            nextSource = Object(nextSource);
+
+            var keysArray = Object.keys(Object(nextSource));
+            for (var nextIndex = 0, len = keysArray.length; nextIndex < len; nextIndex++) {
+              var nextKey = keysArray[nextIndex];
+              var desc = Object.getOwnPropertyDescriptor(nextSource, nextKey);
+              if (desc !== undefined && desc.enumerable) {
+                to[nextKey] = nextSource[nextKey];
+              }
+            }
+          }
+          return to;
+        }
+      });
+    }
+  </script>
   <script>
     var _directionSel = document.getElementById('direction')
     var _positionSel = document.getElementById('position')
@@ -80,5 +129,5 @@
     setData()
   </script>
 
-  <script src="./tib.js"></script>
+  <script src="./tib.bundle.js"></script>
 </body></html>

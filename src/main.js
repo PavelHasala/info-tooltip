@@ -1,8 +1,6 @@
 ;(function () {
-  if (DEV) {
-    require('./_dev/dev.less')
-    require('./style.less')
-  }
+  require('./less/main.less')
+  DEV && console.log('DEV MODE')
   var getOffsets = require('./lib/getPosition')
 
   // TODO: add check for js and css must haves

@@ -1,42 +1,42 @@
 const path = require('path');
 const webpack = require('webpack');
-console.log(process.env.NODE_ENV)
+
 module.exports = {
+  context: path.resolve(__dirname, './src'),
   devtool: 'source-map',
-  devServer:{
-    contentBase: 'build/'
-  },
 
-  entry: [
-    'webpack/hot/dev-server',
-    './src/main.js',
-  ],
+  entry: {
+    tib: ['./main.js']
+  },
   output: {
-    path: path.resolve(__dirname, 'build/'),
-    filename: 'tib.js'
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, './build'),
+    publicPath: '/'
   },
-
+  devServer:{
+    contentBase: path.resolve(__dirname, './src')
+  },
 
   plugins: [
-    new webpack.DefinePlugin({  
-      'process.env':{  
+    new webpack.DefinePlugin({
+      'process.env':{
           'NODE_ENV': JSON.stringify('development')
       },
-      DEV: true
+      'DEV': true
     })
   ],
 
   module: {
-    loaders: [
+    rules: [
+      // {
+      //   test: /\.js$/,
+      //   use: 'babel-loader',
+      //   exclude: /node_modules/
+      // },
       {
-        test: /\.less$/,
-        loaders: [
-          'style-loader',
-          'css-loader?importLoaders=1',
-          'postcss-loader',
-          'less-loader'
-        ]
+        test: /.less$/,
+        use: ['style-loader', 'css-loader', 'less-loader']
       }
     ]
-  },
-};
+  }
+}
