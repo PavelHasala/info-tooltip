@@ -29,6 +29,7 @@ var _getHorizontTopByPosition = function (position) {
 /** -------------------------------------------------------- */
 var _getLeftByDirection = function (direction, position) {
   var XDistance = elemRect.left + scrollX
+
   switch (direction) {
     case 'top':
     case 'bottom':
@@ -52,19 +53,38 @@ var _getVerticalLeftByPosition = function (position) {
 }
 
 var _getPointerWidth = function (elm, direction) {
-  var _styles = window.getComputedStyle(elm, ':after')
+  var _styles = window.getComputedStyle(elm, ':before')
   var _directions = ['top', 'left', 'right', 'bottom']
   var _size
+  var i = 0
 
   while( !_size ) {
     _size = parseFloat(_styles.getPropertyValue('border-'+ _directions[0] +'-width'))
     _directions.shift()
+    i++
+    // To prevent infinite cycle, fe. when we change :before for after etc.
+    if (i = 4) { 
+      break;
+    }
   }
 
   return _size
 }
 
+/**
+ * Horizontal correction. When tooltip will exceed off screen,
+ * take the scrollY and reduce it from dimension
+ * @param  {Number} x LeftByDirection result
+ * @return {Number}
+ */
+var _horizontalCorrection = function (x) {
+  var _offX = (bubbleW + x) - window.innerWidth
+
+  return _offX > 0 ? _offX + 10  : 0
+}
+
 var getOffsets = function (tooltip) {
+  var _left, _right
   pointer  = _getPointerWidth(tooltip.bubbleElm, tooltip.direction)
   bodyRect = document.body.getBoundingClientRect()
   elemRect = tooltip.target.getBoundingClientRect()
@@ -75,9 +95,12 @@ var getOffsets = function (tooltip) {
   targetH  = tooltip.target.offsetHeight
   targetW  = tooltip.target.offsetWidth
 
+  _left  = _getLeftByDirection(tooltip.direction, tooltip.position)
+  _right = _getTopByDirection(tooltip.direction, tooltip.position)
+
   return {
-      left: _getLeftByDirection(tooltip.direction, tooltip.position)
-    , top: _getTopByDirection(tooltip.direction, tooltip.position)
+      left: _left - _horizontalCorrection(_left)
+    , top: _right
   }
 }
 

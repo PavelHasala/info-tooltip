@@ -18,7 +18,7 @@
     color: #000;
   }
 
-  &:after {
+  &:before {
     box-sizing: border-box;
     content: ' ';
     display: inline-block;
@@ -34,6 +34,7 @@
 @media (max-width: 600px) {
   .tooltip-info-bubble {
     max-width: 200px;
+    width: 200px;
   }
 }
 /*                            POSITION OF TOOLTIP POINT.
@@ -61,7 +62,7 @@
   /**
    * @Shape position middle
    */
-  &[data-position='middle']:after {
+  &[data-position='middle']:before {
     /* <horizontal> */
     .tib-pos-right&, .tib-pos-left& {
       top: @position-middle;
@@ -100,7 +101,7 @@
   /**
    * @Shape position start
    */
-  &[data-position='start']:after {
+  &[data-position='start']:before {
     /* <horizontal> */
     .tib-pos-right&, .tib-pos-left& {
       top: 0;
@@ -137,7 +138,7 @@
   /**
    * @Shape position end
    */
-  &[data-position='end']:after {
+  &[data-position='end']:before {
     /* <horizontal> */
     .tib-pos-right&, .tib-pos-left& {
       bottom: 0;

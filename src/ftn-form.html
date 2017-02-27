@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Tooltip info bubble</title>
+  <link rel="stylesheet" type="text/css" href="http://fortuna1.cztc-webtest-03.ux.ifortuna.cz/static/4-1-CZWEBTEST03/cz/resources/registrace_modals_css.css?_linkv=1487779956513">
+  <style type="text/css" media="screen">
+    body {
+      background-color: #333;
+      color: #fff;
+    }
+
+    fieldset { width: 200px; float: left; margin-bottom: 10px; }
+    hr { clear: both; }
+    /*input[type=text] {
+      width: 300px;
+    }*/
+  </style>
+</head>
+<body>
+  <fieldset>
+    <legend><label>direction: </label></legend>
+    <select name="direction" id="direction">
+      <option value="right">right</option>
+      <option value="left">left</option>
+      <option value="bottom">bottom</option>
+      <option value="top">top</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend><label>position:</label></legend>
+    <select name="position" id="position">
+      <option value="start">start</option>
+      <option value="middle">middle</option>
+      <option value="end">end</option>
+    </select>
+  </fieldset>
+  <hr>
+
+  <h1>Tooltip info bubbliny</h1>
+
+<form method="post" action="/ifortuna.cz/cz/uzivatel/uzivatelsky_profil/stav_registrace/osobni/index$749283-step1.html" id="step1form">
+  
+  <table>
+    <tbody>
+    <tr>
+      <th><label for="first-name">Jméno *</label></th>
+      <td>
+        <input id="first-name" name="first_name" class="text required" value="Marina" readonly="" data-required-message="FINISH_REGISTRATION_FIRSTNAME_REQUIRED" type="text">
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="sur-name">Příjmení *</label>
+      </th>
+      <td>
+        <input id="sur-name" name="sur_name" class="text required" value="Kompar" readonly="" data-required-message="FINISH_REGISTRATION_SURNAME_REQUIRED" type="text">
+      </td>
+    </tr>
+    <tr>
+      <th id="oibLabel">
+        <label for="birth_num" class="error">Rodné číslo *</label>
+      </th>
+      <td>
+        <input name="birth_num" id="birth_num" class="ti-bubble text birth-num required error" value="" data-required-message="FINISH_REGISTRATION_ERROR_NATIONAL_IDENTIFICATION_NUMBER" data-tib-event="focus" data-tib-content="Rodné číslo vložte ve formátu 900101/1111. Zadání musí korespondovat s datem narození a oslovením (pohlaví)." data-tib-direction="top" data-tib-position="start" type="text">
+      </td>
+    </tr>
+    <tr>
+      <th id="oibLabel">
+        <label for="birth_num" class="error">Rodné číslo *</label>
+      </th>
+      <td>
+        <input name="birth_num" id="birth_num" class="ti-bubble text birth-num required error" value="" data-required-message="FINISH_REGISTRATION_ERROR_NATIONAL_IDENTIFICATION_NUMBER" data-tib-event="focus" data-tib-content="Rodné číslo vložte ve formátu 900101/1111. Zadání musí korespondovat s datem narození a oslovením (pohlaví)." data-tib-direction="top" data-tib-position="start" type="text">
+      </td>
+    </tr>
+    <tr>
+      <td class="overflow-hidden" colspan="2">
+        <span class="right">
+          <input name="pep" value="false" checked="checked" type="radio"> Ne
+          <input name="pep" value="true" type="radio"> Ano
+        </span>
+        Jste <a href="/ifortuna.cz/cz/napoveda/zaciname/registrace/index.html?open=dopad+zakona+pre+sazejiciho" target="_blank">politicky exponovaná osoba</a>? *</td>
+    </tr>
+  </tbody></table>
+  
+<button type="submit" class="yellow right">
+Následující krok (2/2)</button></form>
+
+  <!--Object.assign -->
+  <script>
+    if (!Object.assign) {
+      Object.defineProperty(Object, 'assign', {
+        enumerable: false,
+        configurable: true,
+        writable: true,
+        value: function(target) {
+          'use strict';
+          if (target === undefined || target === null) {
+            throw new TypeError('Cannot convert first argument to object');
+          }
+
+          var to = Object(target);
+          for (var i = 1; i < arguments.length; i++) {
+            var nextSource = arguments[i];
+            if (nextSource === undefined || nextSource === null) {
+              continue;
+            }
+            nextSource = Object(nextSource);
+
+            var keysArray = Object.keys(Object(nextSource));
+            for (var nextIndex = 0, len = keysArray.length; nextIndex < len; nextIndex++) {
+              var nextKey = keysArray[nextIndex];
+              var desc = Object.getOwnPropertyDescriptor(nextSource, nextKey);
+              if (desc !== undefined && desc.enumerable) {
+                to[nextKey] = nextSource[nextKey];
+              }
+            }
+          }
+          return to;
+        }
+      });
+    }
+  </script>
+  <script>
+    var _directionSel = document.getElementById('direction')
+    var _positionSel = document.getElementById('position')
+
+    function setData () {
+      var _tis = document.querySelectorAll('.ti-bubble')
+      var _i = 0
+      var _length = _tis.length
+  
+      for (_i, _length; _i < _length; _i++) {
+        var _tooltip = _tis[_i]
+        var _direction = _directionSel.selectedOptions[0]
+        var _position = _positionSel.selectedOptions[0]
+
+        _tooltip.setAttribute('data-tib-direction', _direction.value)
+        _tooltip.setAttribute('data-tib-position', _position.value)
+
+        // console.log(_direction.value, _position.value)
+        
+        localStorage.setItem('position', _position.index || 0)
+        localStorage.setItem('direction', _direction.index || 0)
+      } 
+    }
+
+    _directionSel.selectedIndex = localStorage.getItem('direction')
+    _positionSel.selectedIndex = localStorage.getItem('position')
+
+    _directionSel.addEventListener('change', function () { setData(); window.location.reload() } )
+    _positionSel.addEventListener('change',  function () { setData(); window.location.reload() } )
+    
+    setData()
+  </script>
+
+  <script src="./tib.bundle.js"></script>
+</body></html>

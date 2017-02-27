@@ -1,8 +1,8 @@
 //TODO: remove harcoded top and left position when hiding a bubble
 ;(function () {
   require('./less/main.less')
-  DEV && console.log('DEV MODE')
   var getOffsets = require('./lib/getPosition')
+  DEV && console.log('DEV MODE')
 
   // TODO: add check for js and css must haves
   var BubbleBP = {
@@ -21,15 +21,15 @@
   var initBubbles = function (root) {
     var _elementsToConvert = document.querySelectorAll('.ti-bubble')
       forEach( _elementsToConvert, function (index, target) {
-        var _content = target.getAttribute('data-tib-content') || target.title
-        var _event = target.getAttribute('data-tib-event') || BubbleBP.event
+        var _content   = target.getAttribute('data-tib-content') || target.title
+        var _event     = target.getAttribute('data-tib-event') || BubbleBP.event
         var _direction = target.getAttribute('data-tib-direction') || BubbleBP.direction
-        var _position = target.getAttribute('data-tib-position') || BubbleBP.position
+        var _position  = target.getAttribute('data-tib-position') || BubbleBP.position
 
         // There is no content to show in tooltip, dont initiate
         if (!_content) { return false }
         
-        // Sanitize empty title attribute, to prevent further problems
+        // Sanitize empty title attribute, to prevent further problems with assigning content back
         if (target.title === '') { target.removeAttribute('title') }
 
         var _newBubble = Object.assign({}
@@ -88,7 +88,9 @@
 
     bubble.show = function () {
       var _offsets = getOffsets(this)
-      if (DEV) { console.log(_offsets) }
+      DEV && console.log(_offsets)
+
+
       if (this.target.title) {
         this.target.title = ''
       }
