@@ -1,12 +1,12 @@
 {
   "name": "customisable-tooltip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Customisable tooltips with various position.",
   "main": "src/main.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.dev.config.js --port 1337 --hot --colors --progress --no-info --inline ",
+    "start": "webpack-dev-server -d --config webpack.dev.config.js --port 1337 --hot --colors --progress --no-info --inline ",
     "test": "jest --watch",
-    "build": "jest && webpack --config webpack.prod.config.js"
+    "build": "jest && webpack --config webpack.prod.config.js -p"
   },
   "dependencies": {},
   "devDependencies": {
