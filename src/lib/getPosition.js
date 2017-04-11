@@ -27,6 +27,7 @@ var _getHorizontTopByPosition = function (position) {
   }
 }
 /** -------------------------------------------------------- */
+
 var _getLeftByDirection = function (direction, position) {
   var XDistance = elemRect.left + scrollX
 
@@ -44,6 +45,11 @@ var _getLeftByDirection = function (direction, position) {
   }
 }
 
+/**
+ * Computes position of bubble pointer
+ * @param  {String} position Position of pointer relative to bubble
+ * @return {Number}
+ */
 var _getVerticalLeftByPosition = function (position) {
   switch (position) {
     case 'start':  return 0; break
@@ -52,18 +58,23 @@ var _getVerticalLeftByPosition = function (position) {
   }
 }
 
+/**
+ * Computes bubble pointer size
+ * @param  {HtmlElement} elm       Tooltip element
+ * @param  {String} direction Direction bubble is facing
+ * @return {Number}           Pointer size
+ */
 var _getPointerWidth = function (elm, direction) {
   var _styles = window.getComputedStyle(elm, ':before')
   var _directions = ['top', 'left', 'right', 'bottom']
   var _size
-  var i = 0
 
   while( !_size ) {
     _size = parseFloat(_styles.getPropertyValue('border-'+ _directions[0] +'-width'))
     _directions.shift()
-    i++
-    // To prevent infinite cycle, fe. when we change :before for after etc.
-    if (i = 4) { 
+
+    // To prevent infinite cycle, fe. when we change :before for :after etc.
+    if (!_directions.length) { 
       break;
     }
   }
@@ -83,6 +94,11 @@ var _horizontalCorrection = function (x) {
   return _offX > 0 ? _offX + 10  : 0
 }
 
+/**
+ * Computes top and left position
+ * @param  {Object} tooltip Instance of tooltip
+ * @return {Object}         Left and top position
+ */
 var getOffsets = function (tooltip) {
   var _left, _right
   pointer  = _getPointerWidth(tooltip.bubbleElm, tooltip.direction)

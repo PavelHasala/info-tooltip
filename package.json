@@ -1,14 +1,19 @@
 {
   "name": "customisable-tooltip",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Customisable tooltips with various position.",
   "main": "src/main.js",
   "scripts": {
-    "start": "webpack-dev-server -d --config webpack.dev.config.js --port 1337 --hot --colors --progress --no-info --inline ",
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js -d --config webpack.dev.config.js --port 1337 --hot --colors --progress --no-info --inline ",
     "test": "jest --watch",
-    "build": "jest && webpack --config webpack.prod.config.js -p"
+    "build": "jest && ./node_modules/webpack/bin/webpack.js --config webpack.prod.config.js -p",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags"
   },
-  "dependencies": {},
+  "dependencies": {
+    "readystate": "^0.2.0"
+  },
   "devDependencies": {
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "2.0.0",
