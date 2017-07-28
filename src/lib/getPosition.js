@@ -1,8 +1,10 @@
-// TODO: Osetrit pretekani mimo obrazovku
 // FIXME: odokumentovat
-var pointer, bodyRect, elemRect, scrollY, scrollX, bubbleH, bubbleW, targetH, targetW
 
-var _getTopByDirection = function (direction, position) {
+var EXCEED_OFFSET = 5
+var OFFSET_MARGIN = 5
+var pointerSize, bodyRect, elemRect, scrollY, scrollX, bubbleH, bubbleW, targetH, targetW, viewportH
+
+function _getTopByDirection (direction, position) {
   var Ydistance = elemRect.top + scrollY
 
   switch (direction) {
@@ -11,15 +13,15 @@ var _getTopByDirection = function (direction, position) {
         return Ydistance + (targetH/2) - _getHorizontTopByPosition(position)
       break;
     case 'top': 
-        return Ydistance - bubbleH - pointer
+        return Ydistance - bubbleH - pointerSize - OFFSET_MARGIN
       break
     case 'bottom': 
-        return Ydistance + targetH + pointer
+        return Ydistance + targetH + pointerSize + OFFSET_MARGIN
       break
   }
 }
 
-var _getHorizontTopByPosition = function (position) {
+function _getHorizontTopByPosition (position) {
   switch (position) {
     case 'start':  return 0; break
     case 'middle': return (bubbleH / 2); break
@@ -28,19 +30,19 @@ var _getHorizontTopByPosition = function (position) {
 }
 /** -------------------------------------------------------- */
 
-var _getLeftByDirection = function (direction, position) {
+function _getLeftByDirection (direction, position) {
   var XDistance = elemRect.left + scrollX
 
   switch (direction) {
     case 'top':
     case 'bottom':
-        return XDistance + bodyRect.left + (targetW/2) - pointer - _getVerticalLeftByPosition(position)
+        return XDistance + bodyRect.left + (targetW/2) - pointerSize - _getVerticalLeftByPosition(position)
       break
     case 'right':
-        return XDistance + bodyRect.left + targetW + pointer
+        return XDistance + bodyRect.left + targetW + pointerSize + OFFSET_MARGIN
       break;
     case 'left':
-        return XDistance - bodyRect.left - bubbleW - pointer
+        return XDistance - bodyRect.left - bubbleW - pointerSize - OFFSET_MARGIN
       break
   }
 }
@@ -50,7 +52,7 @@ var _getLeftByDirection = function (direction, position) {
  * @param  {String} position Position of pointer relative to bubble
  * @return {Number}
  */
-var _getVerticalLeftByPosition = function (position) {
+function _getVerticalLeftByPosition (position) {
   switch (position) {
     case 'start':  return 0; break
     case 'middle': return (bubbleW / 2); break
@@ -64,7 +66,7 @@ var _getVerticalLeftByPosition = function (position) {
  * @param  {String} direction Direction bubble is facing
  * @return {Number}           Pointer size
  */
-var _getPointerWidth = function (elm, direction) {
+function _getPointerWidth (elm, direction) {
   var _styles = window.getComputedStyle(elm, ':before')
   var _directions = ['top', 'left', 'right', 'bottom']
   var _size
@@ -74,24 +76,73 @@ var _getPointerWidth = function (elm, direction) {
     _directions.shift()
 
     // To prevent infinite cycle, fe. when we change :before for :after etc.
-    if (!_directions.length) { 
+    if (!_directions.length) {
       break;
     }
   }
-
+  
   return _size
 }
 
-/**
- * Horizontal correction. When tooltip will exceed off screen,
- * take the scrollY and reduce it from dimension
- * @param  {Number} x LeftByDirection result
- * @return {Number}
- */
-var _horizontalCorrection = function (x) {
-  var _offX = (bubbleW + x) - window.innerWidth
+function correctExceedment (tooltip, coordinates) {
+  var _left        = coordinates.left
+  var _top         = coordinates.top
+  var _direction   = tooltip.direction
+  var _position    = tooltip.position
+  var _isExceeding = false
 
-  return _offX > 0 ? _offX + 10  : 0
+  switch (tooltip.direction) {
+    case 'right':
+      _isExceeding = (window.innerWidth - (_left + bubbleW + pointerSize)) < EXCEED_OFFSET
+      if (_isExceeding) {
+        _direction = 'bottom'
+        _left      = _getLeftByDirection(_direction, _position)
+        _top       = _getTopByDirection(_direction, _position)
+      }
+      break
+
+    case 'left':
+      _isExceeding = _left < (EXCEED_OFFSET/2)
+
+      if (_isExceeding) {
+        _direction = 'bottom'
+        _position  = 'start'
+        _left      = _getLeftByDirection(_direction, _position)
+        _top       = _getTopByDirection(_direction, _position)
+      }
+      break
+
+    case 'top':
+      _isExceeding = (_top - scrollY) < EXCEED_OFFSET
+      if (_isExceeding) {
+        _direction = 'bottom'
+        _top       = _getTopByDirection(_direction, _position)
+      }
+      break
+ 
+    case 'bottom':
+      var _topWithScroll = (_top + bubbleH + pointerSize - scrollY)
+      _isExceeding       = (viewportH - _topWithScroll) < EXCEED_OFFSET/2
+      if (_isExceeding) {
+        _direction = 'top'
+        _top       = _getTopByDirection(_direction, _position)
+      }
+      break
+
+    default:
+      return {
+          left: coordinates.left
+        , top: coordinates.top
+        , _direction: tooltip.direction
+      }
+  }
+
+  return {
+      left: _left 
+    , top: _top
+    , direction: _direction
+    , position: _position
+  }
 }
 
 /**
@@ -99,25 +150,25 @@ var _horizontalCorrection = function (x) {
  * @param  {Object} tooltip Instance of tooltip
  * @return {Object}         Left and top position
  */
-var getOffsets = function (tooltip) {
-  var _left, _right
-  pointer  = _getPointerWidth(tooltip.bubbleElm, tooltip.direction)
-  bodyRect = document.body.getBoundingClientRect()
-  elemRect = tooltip.target.getBoundingClientRect()
-  scrollY  = window.pageYOffset || document.documentElement.scrollTop
-  scrollX  = window.pageXOffset || document.documentElement.scrollLeft
-  bubbleH  = tooltip.bubbleElm.offsetHeight
-  bubbleW  = tooltip.bubbleElm.offsetWidth
-  targetH  = tooltip.target.offsetHeight
-  targetW  = tooltip.target.offsetWidth
+function getOffsets (tooltip) {
+  var _payload
+  pointerSize  = _getPointerWidth(tooltip.bubbleElm, tooltip.direction)
+  bodyRect  = document.body.getBoundingClientRect()
+  elemRect  = tooltip.target.getBoundingClientRect()
+  scrollY   = window.pageYOffset || document.documentElement.scrollTop
+  scrollX   = window.pageXOffset || document.documentElement.scrollLeft
+  bubbleH   = tooltip.bubbleElm.offsetHeight
+  bubbleW   = tooltip.bubbleElm.offsetWidth
+  targetH   = tooltip.target.offsetHeight
+  targetW   = tooltip.target.offsetWidth
+  viewportH = Math.max(document.documentElement.clientHeight, window.innerHeight)
 
-  _left  = _getLeftByDirection(tooltip.direction, tooltip.position)
-  _right = _getTopByDirection(tooltip.direction, tooltip.position)
+  _payload = correctExceedment(tooltip, {
+      left: _getLeftByDirection(tooltip.direction, tooltip.position)
+    , top: _getTopByDirection(tooltip.direction, tooltip.position)
+  })
 
-  return {
-      left: _left - _horizontalCorrection(_left)
-    , top: _right
-  }
+  return _payload
 }
 
 module.exports = getOffsets

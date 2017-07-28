@@ -9,16 +9,13 @@ require('./less/main.less')
 var getOffsets = require('./lib/getPosition')
 var BubbleBP = require('./components/instanceBlueprint')
 var forEach = require('./lib/forEach')
+var setBubblePointer = require('./lib/setBubblePointer')
 
 // TODO: remove harcoded top and left position when hiding a bubble
 // TODO: convert to es6
 // TODO: rozdelat na jednotlive moduly, aby zavislosti byli DI a testovatelne
 ;(function () {
   DEV && console.log('DEV MODE')
-
-  var CONFIG = {
-    selector: 'tooltip-info-bubble'
-  }
 
   var _state = {
     instances: {}
@@ -73,11 +70,11 @@ var forEach = require('./lib/forEach')
     var _index = 0
 
     forEach( elementsToConvert, function (index, target) {
-        var _content   = target.getAttribute('data-tib-content') || target.title
-        var _event     = target.getAttribute('data-tib-event') || BubbleBP.event
-        var _direction = target.getAttribute('data-tib-direction') || BubbleBP.direction
-        var _position  = target.getAttribute('data-tib-position') || BubbleBP.position
-        var _bubbleId  = target.getAttribute('data-tib-id') || 'tib-' + _index++ 
+        var _content   = target.getAttribute(BubbleBP.DATA_CONTENT) || target.title
+        var _event     = target.getAttribute(BubbleBP.DATA_EVENT) || BubbleBP.event
+        var _direction = target.getAttribute(BubbleBP.DATA_DIRECTION) || BubbleBP.direction
+        var _position  = target.getAttribute(BubbleBP.DATA_POSITION) || BubbleBP.position
+        var _bubbleId  = target.getAttribute(BubbleBP.DATA_ID) || 'tib-' + _index++ 
 
         if (_instances[_bubbleId]) {
           throw 'Tooltip with id "' + _bubbleId + '" already presented, not registering \n' + target.outerHTML
@@ -115,23 +112,12 @@ var forEach = require('./lib/forEach')
   }
 
   var _prepareBubbleElement = function (tooltip) {
-    var _direction = {
-        left: 'tib-pos-left'
-      , right: 'tib-pos-right'
-      , top: 'tib-pos-top'
-      , bottom: 'tib-pos-bottom'
-    }
     var _tooltipHtml = document.createElement('div');
-    if (typeof _tooltipHtml.classList !== 'undefined') {
-      _tooltipHtml.classList.add(CONFIG.selector)
-      _tooltipHtml.classList.add(_direction[tooltip.direction])
-    } else {
-      _tooltipHtml.className = CONFIG.selector + ' ' + _direction[tooltip.direction]
-    }
+    _tooltipHtml.className = tooltip.SELECTOR_BUBBLE_CLASS
     // _tooltipHtml.id = tooltip.id
     _tooltipHtml.setAttribute('data-id', tooltip.id)
     _tooltipHtml.innerHTML = tooltip.content
-    _tooltipHtml.setAttribute('data-position', tooltip.position)
+    setBubblePointer(_tooltipHtml, tooltip.direction, tooltip.position)
 
     tooltip.bubbleElm = _tooltipHtml
 
@@ -168,14 +154,18 @@ var forEach = require('./lib/forEach')
       var _offsets = getOffsets(this)
       // DEV && console.log(_offsets)
 
-
       if (this.target.title) {
         this.target.title = ''
       }
 
-      this.__visible = true;
+      // When bubble exceeds window, we are correction position and bubble direction
+      if (_offsets.direction) {
+        setBubblePointer(this.bubbleElm, _offsets.direction, _offsets.position)
+      }
+
       this.bubbleElm.style.top = _offsets.top + 'px'
       this.bubbleElm.style.left = _offsets.left + 'px'
+      this.__visible = true;
       this.bubbleElm.setAttribute('data-visible','true')
     }
 
