@@ -3396,6 +3396,10 @@ readdirp@^2.0.0:
     readable-stream "^2.0.2"
     set-immediate-shim "^1.0.1"
 
+readystate@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/readystate/-/readystate-0.2.0.tgz#50677f85f1a4faba27d1a2bda69d35ff3b669206"
+
 rechoir@^0.6.2:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/rechoir/-/rechoir-0.6.2.tgz#85204b54dba82d5742e28c96756ef43af50e3384"
