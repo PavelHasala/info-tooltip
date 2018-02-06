@@ -122,7 +122,7 @@ function correctExceedment (tooltip, coordinates) {
  
     case 'bottom':
       var _topWithScroll = (_top + bubbleH + pointerSize - scrollY)
-      _isExceeding       = (viewportH - _topWithScroll) < EXCEED_OFFSET/2
+          _isExceeding   = (viewportH - _topWithScroll) < EXCEED_OFFSET/2
       if (_isExceeding) {
         _direction = 'top'
         _top       = _getTopByDirection(_direction, _position)

@@ -4,6 +4,94 @@
 		"selected_items":
 		[
 			[
+				"index",
+				"indexOf"
+			],
+			[
+				"_ex",
+				"_exceed〔variable〕"
+			],
+			[
+				"scroll",
+				"scrollY"
+			],
+			[
+				"bu",
+				"bubbleH"
+			],
+			[
+				"poin",
+				"pointerW"
+			],
+			[
+				"bub",
+				"bubbleH〔variable〕"
+			],
+			[
+				"to",
+				"top"
+			],
+			[
+				"tool",
+				"tooltip〔argument〕"
+			],
+			[
+				"too",
+				"tooltip〔argument〕"
+			],
+			[
+				"_isEx",
+				"_isExceeding"
+			],
+			[
+				"bubb",
+				"bubbleW〔variable〕"
+			],
+			[
+				"offset",
+				"offsetWidth"
+			],
+			[
+				"_siz",
+				"_size"
+			],
+			[
+				"se",
+				"setBubbleDirection"
+			],
+			[
+				"DIRE",
+				"DIRECTION_CLASS_DEFAULT〔variable〕"
+			],
+			[
+				"_dir",
+				"_dierction"
+			],
+			[
+				"set",
+				"setBubblePosition〔function〕"
+			],
+			[
+				"win",
+				"window〔variable〕"
+			],
+			[
+				"_ma",
+				"_marginCorrection〔variable〕"
+			],
+			[
+				"dir",
+				"direction"
+			],
+			[
+				"_off",
+				"_offY〔variable〕"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
 				"_evn",
 				"_eventType"
 			],
@@ -12,20 +100,12 @@
 				"subscribers"
 			],
 			[
-				"too",
-				"tooltip〔variable〕"
-			],
-			[
 				"_bind",
 				"_bindEvents"
 			],
 			[
 				"_ta",
 				"_target〔variable〕"
-			],
-			[
-				"tool",
-				"tooltipId〔variable〕"
 			],
 			[
 				"sub",
@@ -80,10 +160,6 @@
 				"bubbles〔variable〕"
 			],
 			[
-				"to",
-				"toggleable"
-			],
-			[
 				"_diff",
 				"_diff〔variable〕"
 			],
@@ -106,14 +182,6 @@
 			[
 				"target",
 				"targetH〔variable〕"
-			],
-			[
-				"bu",
-				"bubbleW"
-			],
-			[
-				"bubb",
-				"bubbleH〔variable〕"
 			],
 			[
 				"targe",
@@ -238,10 +306,6 @@
 			[
 				"sta",
 				"status〔variable〕"
-			],
-			[
-				"set",
-				"setState"
 			],
 			[
 				"ma",
@@ -450,89 +514,16 @@
 			[
 				"con",
 				"const〔keyword〕"
-			],
-			[
-				"class",
-				"className"
-			],
-			[
-				"be",
-				"bee\tbeforeEach"
-			],
-			[
-				"it",
-				"ite\tit"
-			],
-			[
-				"obj",
-				"Object"
-			],
-			[
-				"prop",
-				"propTypes\tProp Validation"
-			],
-			[
-				"update",
-				"updates"
-			],
-			[
-				"ave",
-				"averageRenderTime"
-			],
-			[
-				"las",
-				"lastUpdateTime"
-			],
-			[
-				"App",
-				"App.jsx"
-			],
-			[
-				"lastI",
-				"lastUpdateDiff"
-			],
-			[
-				"res",
-				"result"
-			],
-			[
-				"respo",
-				"responses〔variable〕"
-			],
-			[
-				"req",
-				"requestMock"
-			],
-			[
-				"top",
-				"topicsAPI"
-			],
-			[
-				"matches",
-				"matchesBySport"
-			],
-			[
-				"des",
-				"desce\tdescribe"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "src/index.html",
-			"settings":
-			{
-				"buffer_size": 4919,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "src/less/main.less",
 			"settings":
 			{
-				"buffer_size": 5456,
+				"buffer_size": 5488,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -541,25 +532,8 @@
 			"file": "src/main.js",
 			"settings":
 			{
-				"buffer_size": 6338,
+				"buffer_size": 6199,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/components/instanceBlueprint.js",
-			"settings":
-			{
-				"buffer_size": 277,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "package.json",
-			"settings":
-			{
-				"buffer_size": 1499,
 				"line_ending": "Unix"
 			}
 		},
@@ -567,25 +541,16 @@
 			"file": "src/lib/getPosition.js",
 			"settings":
 			{
-				"buffer_size": 3528,
+				"buffer_size": 4986,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/components/instantiateTooltips.js",
+			"file": "src/index.html",
 			"settings":
 			{
-				"buffer_size": 1369,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/__tests__/instantiateTooltips.test.js",
-			"settings":
-			{
-				"buffer_size": 180,
+				"buffer_size": 6534,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -598,13 +563,33 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 135.0,
-		"last_filter": "javasc",
+		"height": 400.0,
+		"last_filter": "html",
 		"selected_items":
 		[
 			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
 				"javasc",
 				"Set Syntax: JavaScript"
+			],
+			[
+				"prettify",
+				"HTMLPrettify"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"sass",
+				"SassBeautify"
 			],
 			[
 				"syntax html",
@@ -613,10 +598,6 @@
 			[
 				"texti",
 				"Set Syntax: Textile"
-			],
-			[
-				"html",
-				"Set Syntax: HTML"
 			],
 			[
 				"text",
@@ -641,14 +622,6 @@
 			[
 				"formater",
 				"ESLint Formatter: Format this file"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"eslint",
@@ -887,7 +860,7 @@
 				"Snippet: for (…) {…}"
 			]
 		],
-		"width": 547.0
+		"width": 601.0
 	},
 	"console":
 	{
@@ -911,15 +884,24 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble",
-		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/build",
-		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/src",
-		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/src/__tests__",
-		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/src/components",
-		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/src/lib"
+		"/Users/hakim/Sites/tooltip-info-bubble",
+		"/Users/hakim/Sites/tooltip-info-bubble/build",
+		"/Users/hakim/Sites/tooltip-info-bubble/src",
+		"/Users/hakim/Sites/tooltip-info-bubble/src/lib"
 	],
 	"file_history":
 	[
+		"/Users/hakim/Sites/tooltip-info-bubble/package.json",
+		"/Users/hakim/Sites/tooltip-info-bubble/src/lib/setBubblePointer.js",
+		"/Users/hakim/Sites/tooltip-info-bubble/build/tib.css",
+		"/Users/hakim/Sites/tooltip-info-bubble/src/components/instanceBlueprint.js",
+		"/Users/hakim/Sites/tooltip-info-bubble/src/index.html",
+		"/Users/hakim/Sites/tooltip-info-bubble/src/components/instantiateTooltips.js",
+		"/Users/hakim/Sites/tooltip-info-bubble/src/__tests__/instantiateTooltips.test.js",
+		"/Users/hakim/Library/Caches/com.binarynights.ForkLift2/#0/index.php",
+		"/Users/hakim/Downloads/font-awesome-4.7-1.0/fonts/fontawesome-webfont.svg",
+		"/Users/hakim/Sites/tooltip-info-bubble/src/lib/correctExceedment.js",
+		"/Users/hakim/Sites/tooltip-info-bubble/tib.sublime-project",
 		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/node_modules/readystate/readystate.js",
 		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/node_modules/readystate/browser.js",
 		"/Users/hakim/Sites/DOODLINGS/tooltip-info-bubble/node_modules/readystate/index.js",
@@ -1036,18 +1018,7 @@
 		"/Users/hakim/Sites/WORK/EON/src/server/frontend/render.js",
 		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/WhyDidYouUpdateMixin.js",
 		"/Users/hakim/Sites/WORK/ai-mitler-fe/build/index.html",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/App.test.js",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/scripts/test.js",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/scripts/start.js",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/README.md",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/AppContainer.jsx",
-		"/Users/hakim/Sites/DOODLINGS/fortuna-sazky-live/public/index.html",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/index.html",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/index.jsx",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/matchList/MatchList.MatchItem.jsx",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/webpack.config.js",
-		"/Users/hakim/Sites/WORK/EON/webpack/makeConfig.js",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/404/404.jsx"
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/App.test.js"
 	],
 	"find":
 	{
@@ -1058,6 +1029,7 @@
 		"height": 94.0,
 		"where_history":
 		[
+			"<open files>",
 			"/Users/hakim/Sites/DOODLINGS/horizon-app/src",
 			"/Users/hakim/Sites/DOODLIGS/horizon-app/src",
 			"/Users/hakim/Sites/WORK/fortuna-sazky-live/src",
@@ -1091,6 +1063,86 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"<li>",
+			"visible",
+			"visibili",
+			"benefits-acceptor",
+			"_checkPromocode",
+			"benefits-acceptor",
+			"id-use_benefits",
+			"id-bonus_select",
+			"_requireWantBonus",
+			"wantBonus",
+			"id-use_benefits",
+			"wantBonus",
+			".locals",
+			".ticket.cancelInterval",
+			"resolveTicket",
+			".log(",
+			"resolve",
+			"resolveTick",
+			"sendTicketRequest",
+			"resolveTicket",
+			"evaluateTicketResult",
+			"resolveTicketTimeout",
+			"locals.resolveTicketTimeout",
+			".locals",
+			"this.locals",
+			".resolveTicket",
+			"const",
+			"let",
+			"EXCEED",
+			"top",
+			"position",
+			"direction",
+			"left",
+			"let",
+			"left",
+			"coordinates.",
+			"coordinates",
+			"_finalTop",
+			"_exceed",
+			"pointerW",
+			"=",
+			"_isExceeding =",
+			"_isExceeding",
+			"getOffsets",
+			"correctExceedment",
+			"'bottom'",
+			"isExceeding",
+			"EXCEED",
+			"BubbleBP.DATA_POSITION",
+			"data-position",
+			"position",
+			"data-position",
+			"SELECTOR_BUBBLE_CLASS",
+			"BUBBLE_CLASS",
+			".selector",
+			"text s tooltipem",
+			"_dierction",
+			"pointer",
+			"tooltip",
+			"before",
+			":before",
+			"position-middle",
+			"@position-middle",
+			"setBubbleDirection",
+			"CONFIG",
+			"windowExceeded",
+			"offsetMargin",
+			"_offsetMargin",
+			"10",
+			"getOffsets",
+			"data-tib-position=",
+			"data-tib-position",
+			"_right",
+			"_offX",
+			"text text text bla",
+			"tootlupem",
+			"<hr>",
+			"}",
+			".item",
+			".",
 			"browser",
 			"_direction",
 			"op",
@@ -1138,87 +1190,7 @@
 			"top",
 			"show",
 			"shwow",
-			"range_start",
-			"val.",
-			"<select",
-			"select",
-			"box-",
-			"shado",
-			":after",
-			"tib",
-			"[name]",
-			"[name].bundle",
-			"[name]",
-			"+",
-			"_site",
-			"\"",
-			"return",
-			"_pointer",
-			"pointer",
-			"bubbleH",
-			"_Xdistance",
-			"-",
-			"+",
-			"bubbleH",
-			"_distance",
-			"position)",
-			"Top",
-			"_targetW",
-			"this",
-			"getOff",
-			"_",
-			"var ",
-			"_getPositionTop",
-			"var ",
-			"_bubbleW",
-			"_scrollX",
-			"_targetH",
-			"_bubbleH",
-			"_scrollY",
-			"_elemRect",
-			"_bodyRect",
-			"_getPositionTop",
-			"_topPosOffset",
-			"getPositionTop",
-			"_getOffsets",
-			"getOffsets",
-			"\"",
-			"calc",
-			"calc(",
-			"-ms-",
-			"2*@size",
-			"build",
-			"tooltip-info-bubble",
-			"./index_files",
-			"dist/",
-			"tooltip-info-bubble",
-			"sourcemap",
-			"dist",
-			"addEv",
-			"getPositionTop",
-			"http://localhost:1234",
-			"this.removeAttribute",
-			"bubbleElm",
-			"start",
-			"transparent",
-			"@bg-color",
-			"left",
-			"right",
-			"middle",
-			"@vertical-middle",
-			"position-middle",
-			"left",
-			"right",
-			"left",
-			"@size",
-			"data-tib-position",
-			"_positionsMap",
-			"end",
-			"middle",
-			"start",
-			"position",
-			"left",
-			"classlist"
+			"range_start"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1369,31 +1341,31 @@
 			[
 				{
 					"buffer": 0,
-					"file": "src/index.html",
+					"file": "src/less/main.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4919,
+						"buffer_size": 5488,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								537,
-								537
+								1936,
+								1936
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
 							"git_gutter_enabled": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Theme - Seti Monokai/icons/Langs/Less.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 765.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -1401,119 +1373,27 @@
 				},
 				{
 					"buffer": 1,
-					"file": "src/less/main.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5456,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18,
-								11
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"syntax": "Packages/Theme - Seti Monokai/icons/Langs/Less.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "src/main.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6338,
+						"buffer_size": 6199,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6333,
-								6333
+								4805,
+								4805
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
 							"git_gutter_enabled": true,
+							"git_gutter_is_enabled": true,
 							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2916.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/components/instanceBlueprint.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 277,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								60,
-								60
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"git_gutter_enabled": true,
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "package.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1499,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_complete": true,
-							"git_gutter_enabled": true,
-							"syntax": "Packages/Theme - Seti Monokai/icons/Langs/npm JSON.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -1525,20 +1405,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 2,
 					"file": "src/lib/getPosition.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3528,
+						"buffer_size": 4986,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3518,
-								3528
+								1056,
+								1064
 							]
 						],
 						"settings":
@@ -1546,39 +1426,40 @@
 							"_anf_new": "",
 							"auto_complete": false,
 							"git_gutter_enabled": true,
+							"git_gutter_is_enabled": true,
 							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1318.0,
+						"translation.y": 165.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "src/components/instantiateTooltips.js",
+					"buffer": 3,
+					"file": "src/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1369,
+						"buffer_size": 6534,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								870,
-								870
+								2392,
+								2392
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"git_gutter_enabled": true,
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -1586,38 +1467,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "src/__tests__/instantiateTooltips.test.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 180,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								170,
-								170
-							]
-						],
-						"settings":
-						{
-							"_anf_new": "",
-							"auto_complete": false,
-							"git_gutter_enabled": true,
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1676,12 +1526,20 @@
 		"selected_items":
 		[
 			[
-				"web",
-				"webpack.prod.config.js"
+				"ind",
+				"src/index.html"
+			],
+			[
+				"inde",
+				"src/index.html"
 			],
 			[
 				"blue",
 				"src/components/instanceBlueprint.js"
+			],
+			[
+				"web",
+				"webpack.prod.config.js"
 			],
 			[
 				"ca",
@@ -1718,10 +1576,6 @@
 			[
 				"prod",
 				"webpack.prod.config.js"
-			],
-			[
-				"ind",
-				"src/index.html"
 			],
 			[
 				"dev",
@@ -1766,10 +1620,6 @@
 			[
 				"ap",
 				"App.css"
-			],
-			[
-				"inde",
-				"index.css"
 			],
 			[
 				"index",
