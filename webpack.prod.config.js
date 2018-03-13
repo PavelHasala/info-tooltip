@@ -10,7 +10,7 @@ module.exports = {
     tib: './main.js'
   },
   output: {
-    filename: '[name].min.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, './build'),
     publicPath: '/'
   },

@@ -1,13 +1,13 @@
 {
   "name": "customisable-tooltip",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Customisable tooltips with various position.",
   "main": "src/main.js",
   "scripts": {
     "start": "webpack-dev-server -d --mode development --port 1337 --hot --colors --progress",
     "startLocal": "yarn start --host 172.17.0.161",
     "test": "jest --watch",
-    "build": "jest && webpack --config webpack.prod.config.js --mode production && cp ./src/index.html ./build",
+    "build": "rm -R ./build/* && jest && webpack --config webpack.prod.config.js --mode production && cp ./src/index.html ./build && cp -R ./src/polyfills ./build",
     "serve": "http-server ./build -p 1337 -a 172.17.0.161"
   },
   "dependencies": {

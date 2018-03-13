@@ -5,8 +5,7 @@ node_modules
 coverage
 
 # production
-build/tib.*
-build/report.html
+build
 
 # misc
 .DS_Store

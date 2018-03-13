@@ -1,22 +1,18 @@
 require('./less/main.less')
 
-var readystate = require('readystate')
-
-if (DEV) {
-  window.readystate = readystate
-}
-
-// var instantiateTooltips = require('./components/instantiateTooltips')
-var getOffsets = require('./helpers/getPosition')
-var BubbleBP = require('./instanceBlueprint')
-var forEach = require('./helpers/forEach')
-var setBubblePointer = require('./helpers/setBubblePointer')
+var instantiateTooltips = require('./instantiateTooltips')
+var getOffsets          = require('./helpers/getPosition')
+var BubbleBP            = require('./instanceBlueprint')
+var forEach             = require('./helpers/forEach')
+var setBubblePointer    = require('./helpers/setBubblePointer')
 
 // TODO: remove harcoded top and left position when hiding a bubble
 // TODO: convert to es6
 // TODO: rozdelat na jednotlive moduly, aby zavislosti byli DI a testovatelne
 ;(function () {
-  DEV && console.log('DEV MODE')
+  if (!window.readystate) {
+    window.readystate = require('readystate')
+  }
 
   var _state = {
     instances: {}
@@ -204,5 +200,5 @@ var setBubblePointer = require('./helpers/setBubblePointer')
     }
   }
 
-  readystate.interactive(_initTooltips)
+  window.readystate.interactive(_initTooltips)
 })()
