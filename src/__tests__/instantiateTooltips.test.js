@@ -1,4 +1,4 @@
-var instantiateTooltips = require('../components/instantiateTooltips.js')
+var instantiateTooltips = require('../instantiateTooltips.js')
 
 describe('Tooltip instanciating', () => {
   it('should behave...', () => {

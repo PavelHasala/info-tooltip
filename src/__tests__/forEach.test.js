@@ -1,4 +1,4 @@
-var forEach = require('../lib/forEach.js')
+var forEach = require('../helpers/forEach.js')
 
 describe('For each method', () => {
   var list = ['a', 'b', 'c']

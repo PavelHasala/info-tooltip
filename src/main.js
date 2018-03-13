@@ -1,15 +1,16 @@
+require('./less/main.less')
+
 var readystate = require('readystate')
 
 if (DEV) {
   window.readystate = readystate
 }
 
-require('./less/main.less')
 // var instantiateTooltips = require('./components/instantiateTooltips')
-var getOffsets = require('./lib/getPosition')
-var BubbleBP = require('./components/instanceBlueprint')
-var forEach = require('./lib/forEach')
-var setBubblePointer = require('./lib/setBubblePointer')
+var getOffsets = require('./helpers/getPosition')
+var BubbleBP = require('./instanceBlueprint')
+var forEach = require('./helpers/forEach')
+var setBubblePointer = require('./helpers/setBubblePointer')
 
 // TODO: remove harcoded top and left position when hiding a bubble
 // TODO: convert to es6

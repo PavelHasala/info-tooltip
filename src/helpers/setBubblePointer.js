@@ -1,4 +1,4 @@
-var BubbleBP = require('./../components/instanceBlueprint')
+var BubbleBP = require('../instanceBlueprint')
 
 const DEFAULT_TOOLTIP_CLASS   = BubbleBP.SELECTOR_BUBBLE_CLASS
 const DIRECTION_CLASS_PREFIX  = 'tib-pos-'

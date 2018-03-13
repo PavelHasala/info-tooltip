@@ -7,14 +7,15 @@
     "start": "webpack-dev-server -d --mode development --port 1337 --hot --colors --progress",
     "startLocal": "yarn start --host 172.17.0.161",
     "test": "jest --watch",
-    "build": "jest && ./node_modules/webpack/bin/webpack.js --config webpack.prod.config.js -p"
+    "build": "jest && webpack --config webpack.prod.config.js --mode production && cp ./src/index.html ./build",
+    "serve": "http-server ./build -p 1337 -a 172.17.0.161"
   },
   "dependencies": {
     "readystate": "0.3.0"
   },
   "devDependencies": {
     "css-loader": "^0.28.9",
-    "extract-text-webpack-plugin": "^3.0.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "jest": "^22.4.2",
     "less": "^3.0.1",
     "less-loader": "^4.1.0",

@@ -1,7 +1,8 @@
-var path = require('path');
-var webpack = require('webpack');
+const path                 = require('path');
+const webpack              = require('webpack');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const ExtractTextPlugin    = require("extract-text-webpack-plugin");
+const version              = require('./package.json').version;
 
 module.exports = {
   context: path.resolve(__dirname, './src'),
@@ -17,13 +18,9 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env':{
-        'NODE_ENV': JSON.stringify('production')
+        'VERSION': JSON.stringify(version)
       },
       'DEV': false
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: false,
-      minify: false
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.AggressiveMergingPlugin(),
@@ -49,10 +46,9 @@ module.exports = {
       {
         test: /.less$/,
         // exclude: /__dev__/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: 'css-loader!postcss-loader!less-loader'
-        })
+        use: ExtractTextPlugin.extract([
+          'css-loader','postcss-loader','less-loader'
+        ])
       }
     ]
   }
