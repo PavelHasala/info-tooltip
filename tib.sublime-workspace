@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Ar",
+				"Array.includes.js"
+			],
+			[
 				"index",
 				"indexOf"
 			],
@@ -510,20 +514,25 @@
 			[
 				"ac",
 				"actions"
-			],
-			[
-				"con",
-				"const〔keyword〕"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
+			"file": "src/index.html",
+			"settings":
+			{
+				"buffer_size": 5510,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "src/less/main.less",
 			"settings":
 			{
-				"buffer_size": 5488,
+				"buffer_size": 5490,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -532,33 +541,7 @@
 			"file": "src/main.js",
 			"settings":
 			{
-				"buffer_size": 6199,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/components/instanceBlueprint.js",
-			"settings":
-			{
-				"buffer_size": 504,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/lib/getPosition.js",
-			"settings":
-			{
-				"buffer_size": 4986,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/index.html",
-			"settings":
-			{
-				"buffer_size": 6534,
+				"buffer_size": 6187,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -895,17 +878,26 @@
 		"/Users/hakim/Sites/tooltip-info-bubble",
 		"/Users/hakim/Sites/tooltip-info-bubble/build",
 		"/Users/hakim/Sites/tooltip-info-bubble/src",
-		"/Users/hakim/Sites/tooltip-info-bubble/src/lib"
+		"/Users/hakim/Sites/tooltip-info-bubble/src/__tests__",
+		"/Users/hakim/Sites/tooltip-info-bubble/src/components",
+		"/Users/hakim/Sites/tooltip-info-bubble/src/helpers"
 	],
 	"file_history":
 	[
+		"/Users/hakim/Sites/tooltip-info-bubble/webpack.config.js",
+		"/Users/hakim/Sites/tooltip-info-bubble/src/helpers/setBubblePointer.js",
 		"/Users/hakim/Sites/tooltip-info-bubble/package.json",
+		"/Users/hakim/Sites/tooltip-info-bubble/.gitignore",
+		"/Users/hakim/Sites/tooltip-info-bubble/webpack.prod.config.js",
+		"/Users/hakim/Sites/tooltip-info-bubble/src/__tests__/forEach.test.js",
+		"/Users/hakim/Sites/tooltip-info-bubble/src/__tests__/instantiateTooltips.test.js",
+		"/Users/hakim/Sites/tooltip-info-bubble/src/instanceBlueprint.js",
+		"/Users/hakim/Sites/tooltip-info-bubble/src/helpers/getPosition.js",
 		"/Users/hakim/Sites/tooltip-info-bubble/src/lib/setBubblePointer.js",
 		"/Users/hakim/Sites/tooltip-info-bubble/build/tib.css",
 		"/Users/hakim/Sites/tooltip-info-bubble/src/components/instanceBlueprint.js",
 		"/Users/hakim/Sites/tooltip-info-bubble/src/index.html",
 		"/Users/hakim/Sites/tooltip-info-bubble/src/components/instantiateTooltips.js",
-		"/Users/hakim/Sites/tooltip-info-bubble/src/__tests__/instantiateTooltips.test.js",
 		"/Users/hakim/Library/Caches/com.binarynights.ForkLift2/#0/index.php",
 		"/Users/hakim/Downloads/font-awesome-4.7-1.0/fonts/fontawesome-webfont.svg",
 		"/Users/hakim/Sites/tooltip-info-bubble/src/lib/correctExceedment.js",
@@ -1019,14 +1011,7 @@
 		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/connectService.js",
 		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/overview/actions.js",
 		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/overview/actions.test.js",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/build/static/js/main.9ff2d111.js.map",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/app/actions.js",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/overview/reducer.js",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/app/reducer.js",
-		"/Users/hakim/Sites/WORK/EON/src/server/frontend/render.js",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/WhyDidYouUpdateMixin.js",
-		"/Users/hakim/Sites/WORK/ai-mitler-fe/build/index.html",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/App.test.js"
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/build/static/js/main.9ff2d111.js.map"
 	],
 	"find":
 	{
@@ -1034,9 +1019,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 94.0,
+		"height": 106.0,
 		"where_history":
 		[
+			"/Users/hakim/Sites/tooltip-info-bubble/src",
 			"<open files>",
 			"/Users/hakim/Sites/DOODLINGS/horizon-app/src",
 			"/Users/hakim/Sites/DOODLIGS/horizon-app/src",
@@ -1071,6 +1057,24 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"subscribers",
+			"subscribe",
+			"subscri",
+			"subscribe",
+			"},\n",
+			"=",
+			"readystate",
+			"ready",
+			"DEV",
+			"tooltip_id",
+			"ready",
+			"comp",
+			"trans",
+			"input",
+			"subs",
+			"./../",
+			"lib",
+			"/lib",
 			"assign",
 			"<li>",
 			"visible",
@@ -1180,25 +1184,7 @@
 			"_instancesList",
 			"tooltips",
 			"_elementsToConvert",
-			"forEach",
-			"_instantiateTooltips",
-			"instantiateTooltips",
-			"forEach",
-			"prepareTooltipInstances",
-			"bubbles",
-			"tib-1",
-			"initBubbles",
-			"_template.marathon_indication_pagelet.",
-			"h3",
-			"“",
-			"„",
-			"‐ ",
-			"\n",
-			"window.innerWidth",
-			"=",
-			"top",
-			"show",
-			"shwow"
+			"forEach"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1344,154 +1330,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/less/main.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5488,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1936,
-								1936
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Theme - Seti Monokai/icons/Langs/Less.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 765.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/main.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6199,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5494,
-								5494
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"git_gutter_enabled": true,
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2575.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/components/instanceBlueprint.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 504,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/lib/getPosition.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4986,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1056,
-								1064
-							]
-						],
-						"settings":
-						{
-							"_anf_new": "",
-							"auto_complete": false,
-							"git_gutter_enabled": true,
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "src/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6534,
+						"buffer_size": 5510,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2392,
-								2392
+								1100,
+								1100
 							]
 						],
 						"settings":
@@ -1506,7 +1362,73 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/less/main.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1801,
+								1801
+							]
+						],
+						"settings":
+						{
+							"git_gutter_enabled": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Theme - Seti Monokai/icons/Langs/Less.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								587,
+								587
+							]
+						],
+						"settings":
+						{
+							"at_wb_tests_view": false,
+							"auto_complete": false,
+							"git_gutter_enabled": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1518,7 +1440,7 @@
 	},
 	"input":
 	{
-		"height": 31.0
+		"height": 37.0
 	},
 	"layout":
 	{
@@ -1565,6 +1487,26 @@
 		"selected_items":
 		[
 			[
+				"web",
+				"webpack.config.js"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"git",
+				".gitignore"
+			],
+			[
+				"prod",
+				"webpack.prod.config.js"
+			],
+			[
+				"webpa",
+				"webpack.dev.config.js"
+			],
+			[
 				"blue",
 				"src/components/instanceBlueprint.js"
 			],
@@ -1577,10 +1519,6 @@
 				"src/index.html"
 			],
 			[
-				"web",
-				"webpack.prod.config.js"
-			],
-			[
 				"ca",
 				"CHANGELOG.md"
 			],
@@ -1591,10 +1529,6 @@
 			[
 				"ch",
 				"CHANGELOG.md"
-			],
-			[
-				"pac",
-				"package.json"
 			],
 			[
 				"insta",
@@ -1611,10 +1545,6 @@
 			[
 				"f",
 				"src/ftn-form.html"
-			],
-			[
-				"prod",
-				"webpack.prod.config.js"
 			],
 			[
 				"dev",
@@ -1905,10 +1835,6 @@
 				"src/lib/connectService.js"
 			],
 			[
-				"webpa",
-				"webpack.config.js"
-			],
-			[
 				"matchdet",
 				"src/components/matchList/MatchDetail.jsx"
 			],
@@ -2071,10 +1997,6 @@
 			[
 				"analy",
 				"src/browser/lib/analytics.js"
-			],
-			[
-				"a1",
-				"src/browser/modules/A1/Step1.react.js"
 			]
 		],
 		"width": 0.0

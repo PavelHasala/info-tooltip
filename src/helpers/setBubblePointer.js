@@ -1,10 +1,10 @@
 var BubbleBP = require('../instanceBlueprint')
 
-const DEFAULT_TOOLTIP_CLASS   = BubbleBP.SELECTOR_BUBBLE_CLASS
-const DIRECTION_CLASS_PREFIX  = 'tib-pos-'
-const DIRECTION_CLASS_DEFAULT = 'bottom'
-const POSITION_CLASS_DEFAULT  = 'middle'
-const DATA_POSITION_SELECTOR  = 'data-position'
+var DEFAULT_TOOLTIP_CLASS   = BubbleBP.SELECTOR_BUBBLE_CLASS
+var DIRECTION_CLASS_PREFIX  = 'tib-pos-'
+var DIRECTION_CLASS_DEFAULT = 'bottom'
+var POSITION_CLASS_DEFAULT  = 'middle'
+var DATA_POSITION_SELECTOR  = 'data-position'
 
 module.exports = function setBubblePointer (bubbleElm, direction, position) {
   var _direction = DIRECTION_CLASS_PREFIX + (direction || DIRECTION_CLASS_DEFAULT)

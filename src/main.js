@@ -13,7 +13,6 @@ var setBubblePointer    = require('./helpers/setBubblePointer')
   if (!window.readystate) {
     window.readystate = require('readystate')
   }
-
   var _state = {
     instances: {}
   }
@@ -201,4 +200,4 @@ var setBubblePointer    = require('./helpers/setBubblePointer')
   }
 
   window.readystate.interactive(_initTooltips)
-})()
+})();

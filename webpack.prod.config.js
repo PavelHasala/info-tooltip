@@ -3,6 +3,7 @@ const webpack              = require('webpack');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const ExtractTextPlugin    = require("extract-text-webpack-plugin");
 const version              = require('./package.json').version;
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   context: path.resolve(__dirname, './src'),
@@ -11,7 +12,7 @@ module.exports = {
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, './build'),
+    path: path.resolve(__dirname, './dist'),
     publicPath: '/'
   },
 
@@ -33,7 +34,8 @@ module.exports = {
       logLevel: 'info',
       openAnalyzer: false
     }),
-    new ExtractTextPlugin('[name].css')
+    new ExtractTextPlugin('[name].css'),
+    new CleanWebpackPlugin(['dist'])
   ],
 
   module: {

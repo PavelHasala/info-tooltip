@@ -1,0 +1,182 @@
+.tooltip-info-bubble {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyVJREFUeNpifHmckwEHcPn5m5Hj0i0u84fP2dV+/WZkY2P9/0te8uctPbVvJ9lZ//8AqtmDTSMLNsOevmJTWLRFpPDIBR6tHz+ZMBSws/1jsDH4ciPa6+1kkCXohjO+OsEF5/z/z+CydJtw7qKtwn5//jAyEALMTP8Z4v3ebor2fDuZkRFhMHNpCivcwO5FEr2rdwvZ/fvHiNUAUcE/DN9/MoPUQvUwMpy/waX+6j2rgZX+lztAg+8hGwp2IchAbC4CGTan/mF8vO/baeLCf34cvcBjjCx/5zGHOAszg4Ce2vc3QO49cIA9eMautnCzsB8ub5pqf70gJvT7GYjNzfn3EzY1i7YI+4HMgbnUZcpKsYZ7TzhEcBn6+j2rhCDfn293nnDozForlvv1O2bk/QMGxeevzKp2xp9vsICSzbGLPBr4IuTDZ2aGjvmSGYQi7tB5HjWghTxMl29zmWJLNsiAl/svQ4Dj+xMZoa/XMOJJFKAUc/UupzHL8zescviSTITHu11Rnu+mcrL/+waK9XkbREKAGQGnwY9esKkwffzCLIRLQVPmsw4xoT/P2Fn/gXMPyAH4DASBH7+YuJigGrCCxllSFSt2CCUwMTH8A/HP3+SyJhSuAjx/3zHJS/66hUsByFV6qt8uwbLv+evcNoQMlRD5/YhJW/n7WRaW/zgVARP0KZDXQeF57gaXGj4DOdj/MeiqfjvNxM3574ud4RecrtVR/n4aRH/7wcTjbPbpSFPm0x5caoFZ9Qao9AKlpT0x3m8nsjBjuhYYlgxSYr8fQXLSvy86Kt/P9CySKMFa3AH1x3i9mwwyD1z0KUj9vBXn83bTvI0iKFn1HzB6dh7jC2ZiZAjceZwv7OItLgFcrozzfbsJZA5yeboHWDYyPHvDqrDjKL8esmKgy1IIRY63zcdzoOIPVq7Ciz5QsQUqvpiZGYQu3+ZUAxVrhAAogtOC3qxJDXrdgVyeohTSsKTz8DmbCrjkB+bl31gKa1agYbZGn28k+r3tlRb79QBvyY9uOKhwuHKH0/TxSzaln8CcwgbMKHISv+4AI+w0KOJw1VEAAQYAgfdM2Ssf1mMAAAAASUVORK5CYII=') no-repeat 10px 10px #ffd906;
+  border-radius: 4px;
+  color: #000;
+  display: inline-block;
+  max-width: 250px;
+  opacity: 0;
+  top: -10000px;
+  left: -10000px;
+  padding: 11px 10px 10px 40px;
+  position: absolute;
+  transition: opacity 0.4s ease-out;
+  z-index: 1999;
+}
+.tooltip-info-bubble p {
+  color: #000;
+}
+.tooltip-info-bubble:before {
+  box-sizing: border-box;
+  content: ' ';
+  display: inline-block;
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+.tooltip-info-bubble[data-visible] {
+  opacity: 1;
+}
+@media (max-width: 600px) {
+  .tooltip-info-bubble {
+    max-width: 200px;
+    width: 200px;
+  }
+}
+/*                            POSITION OF TOOLTIP POINT.
+ * ------------------------------------------------------------------------------- 
+ */
+.tooltip-info-bubble {
+  cursor: default;
+  /**
+   * @Shape position middle
+   * DEFAULT
+   */
+  /**
+   * @Shape position start
+   */
+  /**
+   * @Shape position end
+   */
+}
+.tib-pos-right.tooltip-info-bubble[data-position='start'] {
+  border-top-left-radius: 0;
+}
+.tib-pos-left.tooltip-info-bubble[data-position='start'] {
+  border-top-right-radius: 0;
+}
+.tib-pos-top.tooltip-info-bubble[data-position='start'] {
+  border-bottom-left-radius: 0;
+}
+.tib-pos-bottom.tooltip-info-bubble[data-position='start'] {
+  border-top-left-radius: 0;
+}
+.tib-pos-right.tooltip-info-bubble[data-position='end'] {
+  border-bottom-left-radius: 0;
+}
+.tib-pos-left.tooltip-info-bubble[data-position='end'] {
+  border-bottom-right-radius: 0;
+}
+.tib-pos-top.tooltip-info-bubble[data-position='end'] {
+  border-bottom-right-radius: 0;
+}
+.tib-pos-bottom.tooltip-info-bubble[data-position='end'] {
+  border-top-right-radius: 0;
+}
+.tooltip-info-bubble[data-position='middle']:before {
+  /* <horizontal> */
+  /* #Direction: right */
+  /* #Direction: left */
+  /* <vertical> */
+  /* #Direction: top */
+  /* #Direction: bottom */
+}
+.tib-pos-right.tooltip-info-bubble[data-position='middle']:before,
+.tib-pos-left.tooltip-info-bubble[data-position='middle']:before {
+  top: calc(50% - 7px);
+  border-top: 7.5px solid transparent;
+  border-bottom: 7.5px solid transparent;
+}
+.tib-pos-right.tooltip-info-bubble[data-position='middle']:before {
+  left: -10px;
+  border-right: 10px solid #ffd906;
+}
+.tib-pos-left.tooltip-info-bubble[data-position='middle']:before {
+  right: -10px;
+  border-left: 10px solid #ffd906;
+}
+.tib-pos-top.tooltip-info-bubble[data-position='middle']:before,
+.tib-pos-bottom.tooltip-info-bubble[data-position='middle']:before {
+  left: calc(50% - 7px);
+  border-left: 7.5px solid transparent;
+  border-right: 7.5px solid transparent;
+}
+.tib-pos-top.tooltip-info-bubble[data-position='middle']:before {
+  bottom: -10px;
+  border-top: 10px solid #ffd906;
+}
+.tib-pos-bottom.tooltip-info-bubble[data-position='middle']:before {
+  top: -10px;
+  border-bottom: 10px solid #ffd906;
+}
+.tooltip-info-bubble[data-position='start']:before {
+  /* <horizontal> */
+  /* #Direction: right */
+  /* #Direction: left */
+  /* <vertical> */
+  /* #Direction: top */
+  /* #Direction: bottom */
+}
+.tib-pos-right.tooltip-info-bubble[data-position='start']:before,
+.tib-pos-left.tooltip-info-bubble[data-position='start']:before {
+  top: 0;
+  border-top: 10px solid #ffd906;
+}
+.tib-pos-right.tooltip-info-bubble[data-position='start']:before {
+  left: -10px;
+  border-left: 10px solid transparent;
+}
+.tib-pos-left.tooltip-info-bubble[data-position='start']:before {
+  right: -10px;
+  border-right: 10px solid transparent;
+}
+.tib-pos-top.tooltip-info-bubble[data-position='start']:before,
+.tib-pos-bottom.tooltip-info-bubble[data-position='start']:before {
+  left: 0;
+  border-right: 10px solid transparent;
+}
+.tib-pos-top.tooltip-info-bubble[data-position='start']:before {
+  bottom: -10px;
+  border-top: 10px solid #ffd906;
+}
+.tib-pos-bottom.tooltip-info-bubble[data-position='start']:before {
+  top: -10px;
+  border-bottom: 10px solid #ffd906;
+}
+.tooltip-info-bubble[data-position='end']:before {
+  /* <horizontal> */
+  /* #Direction: right */
+  /* #Direction: left */
+  /* <vertical> */
+  /* #Direction: top */
+  /* #Direction: bottom */
+}
+.tib-pos-right.tooltip-info-bubble[data-position='end']:before,
+.tib-pos-left.tooltip-info-bubble[data-position='end']:before {
+  bottom: 0;
+}
+.tib-pos-right.tooltip-info-bubble[data-position='end']:before {
+  left: -10px;
+  border-right: 10px solid #ffd906;
+  border-top: 10px solid transparent;
+}
+.tib-pos-left.tooltip-info-bubble[data-position='end']:before {
+  right: -10px;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #ffd906;
+}
+.tib-pos-top.tooltip-info-bubble[data-position='end']:before,
+.tib-pos-bottom.tooltip-info-bubble[data-position='end']:before {
+  right: 0;
+}
+.tib-pos-top.tooltip-info-bubble[data-position='end']:before {
+  bottom: -10px;
+  border-left: 10px solid transparent;
+  border-top: 10px solid #ffd906;
+}
+.tib-pos-bottom.tooltip-info-bubble[data-position='end']:before {
+  top: -10px;
+  border-right: 10px solid #ffd906;
+  border-top: 10px solid transparent;
+}
