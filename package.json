@@ -1,6 +1,6 @@
 {
   "name": "customisable-tooltip",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Customisable tooltips with various position.",
   "main": "src/main.js",
   "scripts": {
@@ -10,28 +10,34 @@
     "test": "jest --watch"
   },
   "dependencies": {
-    "npm": "^5.8.0",
     "readystate": "0.3.0"
   },
   "devDependencies": {
+    "autoprefixer": "^9.3.1",
     "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^0.28.9",
+    "css-loader": "^1.0.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "http-server": "^0.11.1",
     "internal-ip": "^3.0.1",
-    "jest": "^22.4.2",
+    "jest": "^23.6.0",
     "less": "^3.0.1",
     "less-loader": "^4.1.0",
-    "postcss-loader": "^2.1.1",
+    "postcss-loader": "^3.0.0",
     "postcss-smart-import": "^0.7.6",
     "precss": "^3.1.0",
-    "sinon": "^4.2.2",
-    "style-loader": "^0.20.1",
+    "sinon": "^7.1.1",
+    "style-loader": "^0.23.1",
     "webpack": "^4.1.1",
-    "webpack-bundle-analyzer": "^2.2.1",
-    "webpack-cli": "^2.0.11",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.1"
   },
   "author": "pavel.hasala@etnetera.cz",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": [
+    ">0.1%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

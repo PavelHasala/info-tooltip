@@ -520,28 +520,19 @@
 	"buffers":
 	[
 		{
-			"file": "src/index.html",
-			"settings":
-			{
-				"buffer_size": 5510,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/less/main.less",
-			"settings":
-			{
-				"buffer_size": 5490,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "src/main.js",
 			"settings":
 			{
 				"buffer_size": 6187,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/helpers/setBubblePointer.js",
+			"settings":
+			{
+				"buffer_size": 706,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -876,7 +867,6 @@
 	"expanded_folders":
 	[
 		"/Users/hakim/Sites/tooltip-info-bubble",
-		"/Users/hakim/Sites/tooltip-info-bubble/build",
 		"/Users/hakim/Sites/tooltip-info-bubble/src",
 		"/Users/hakim/Sites/tooltip-info-bubble/src/__tests__",
 		"/Users/hakim/Sites/tooltip-info-bubble/src/components",
@@ -884,11 +874,14 @@
 	],
 	"file_history":
 	[
+		"/Users/hakim/Sites/tooltip-info-bubble/src/instantiateTooltips.js",
+		"/Users/hakim/Sites/tooltip-info-bubble/src/index.html",
+		"/Users/hakim/Sites/tooltip-info-bubble/src/less/main.less",
+		"/Users/hakim/Sites/tooltip-info-bubble/package.json",
+		"/Users/hakim/Sites/tooltip-info-bubble/webpack.prod.config.js",
 		"/Users/hakim/Sites/tooltip-info-bubble/webpack.config.js",
 		"/Users/hakim/Sites/tooltip-info-bubble/src/helpers/setBubblePointer.js",
-		"/Users/hakim/Sites/tooltip-info-bubble/package.json",
 		"/Users/hakim/Sites/tooltip-info-bubble/.gitignore",
-		"/Users/hakim/Sites/tooltip-info-bubble/webpack.prod.config.js",
 		"/Users/hakim/Sites/tooltip-info-bubble/src/__tests__/forEach.test.js",
 		"/Users/hakim/Sites/tooltip-info-bubble/src/__tests__/instantiateTooltips.test.js",
 		"/Users/hakim/Sites/tooltip-info-bubble/src/instanceBlueprint.js",
@@ -896,7 +889,6 @@
 		"/Users/hakim/Sites/tooltip-info-bubble/src/lib/setBubblePointer.js",
 		"/Users/hakim/Sites/tooltip-info-bubble/build/tib.css",
 		"/Users/hakim/Sites/tooltip-info-bubble/src/components/instanceBlueprint.js",
-		"/Users/hakim/Sites/tooltip-info-bubble/src/index.html",
 		"/Users/hakim/Sites/tooltip-info-bubble/src/components/instantiateTooltips.js",
 		"/Users/hakim/Library/Caches/com.binarynights.ForkLift2/#0/index.php",
 		"/Users/hakim/Downloads/font-awesome-4.7-1.0/fonts/fontawesome-webfont.svg",
@@ -1009,9 +1001,7 @@
 		"/Users/hakim/Library/Application Support/Sublime Text 3/Packages/Jasmine JS/snippets/double-quotes/it.sublime-snippetx",
 		"/Users/hakim/Dropbox/App/Sublime/User/define_module.sublime-snippet",
 		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/lib/connectService.js",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/overview/actions.js",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/overview/actions.test.js",
-		"/Users/hakim/Sites/WORK/fortuna-sazky-live/build/static/js/main.9ff2d111.js.map"
+		"/Users/hakim/Sites/WORK/fortuna-sazky-live/src/components/overview/actions.js"
 	],
 	"find":
 	{
@@ -1057,6 +1047,10 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"const",
+			"css",
+			"build",
+			"/build",
 			"subscribers",
 			"subscribe",
 			"subscri",
@@ -1180,11 +1174,7 @@
 			"_tooltips",
 			"initBubbles",
 			"_initBubbles",
-			"initBubbles",
-			"_instancesList",
-			"tooltips",
-			"_elementsToConvert",
-			"forEach"
+			"initBubbles"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1330,75 +1320,11 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5510,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1100,
-								1100
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/less/main.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5490,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1801,
-								1801
-							]
-						],
-						"settings":
-						{
-							"git_gutter_enabled": true,
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Theme - Seti Monokai/icons/Langs/Less.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "src/main.js",
 					"semi_transient": false,
 					"settings":
@@ -1410,8 +1336,8 @@
 						"selection":
 						[
 							[
-								587,
-								587
+								903,
+								903
 							]
 						],
 						"settings":
@@ -1429,6 +1355,37 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/helpers/setBubblePointer.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 706,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								51,
+								51
+							]
+						],
+						"settings":
+						{
+							"at_wb_tests_view": false,
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1487,8 +1444,24 @@
 		"selected_items":
 		[
 			[
+				"setbu",
+				"src/helpers/setBubblePointer.js"
+			],
+			[
+				"insta",
+				"src/instantiateTooltips.js"
+			],
+			[
+				"prd",
+				"webpack.prod.config.js"
+			],
+			[
 				"web",
 				"webpack.config.js"
+			],
+			[
+				"prod",
+				"webpack.prod.config.js"
 			],
 			[
 				"pac",
@@ -1497,10 +1470,6 @@
 			[
 				"git",
 				".gitignore"
-			],
-			[
-				"prod",
-				"webpack.prod.config.js"
 			],
 			[
 				"webpa",
@@ -1529,10 +1498,6 @@
 			[
 				"ch",
 				"CHANGELOG.md"
-			],
-			[
-				"insta",
-				"src/components/instanceBlueprint.js"
 			],
 			[
 				"for",
@@ -1989,14 +1954,6 @@
 			[
 				"a1modu",
 				"src/browser/modules/A1/Module.react.js"
-			],
-			[
-				"offta",
-				"src/browser/forms/servisKotlu/orderForm/OfftakePlaces.react.js"
-			],
-			[
-				"analy",
-				"src/browser/lib/analytics.js"
 			]
 		],
 		"width": 0.0

@@ -1,6 +1,6 @@
 /* Array.prototype.includes */
 // https://tc39.github.io/ecma262/#sec-array.prototype.includes
-;(function () {
+(function () {
   if (!Array.prototype.includes) {
     Object.defineProperty(Array.prototype, 'includes', {
       value: function(searchElement, fromIndex) {

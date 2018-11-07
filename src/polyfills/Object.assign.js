@@ -1,5 +1,5 @@
  // Object.assign
-;(function () {
+(function () {
   if (!Object.assign) {
     Object.defineProperty(Object, 'assign', {
       enumerable: false,

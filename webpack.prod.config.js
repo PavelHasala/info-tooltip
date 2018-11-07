@@ -1,7 +1,7 @@
 const path                 = require('path');
 const webpack              = require('webpack');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const ExtractTextPlugin    = require("extract-text-webpack-plugin");
+const ExtractTextPlugin    = require('extract-text-webpack-plugin');
 const version              = require('./package.json').version;
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -54,4 +54,4 @@ module.exports = {
       }
     ]
   }
-}
+};
