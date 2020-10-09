@@ -1,9 +1,9 @@
-const path                 = require('path');
-const webpack              = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const ExtractTextPlugin    = require('extract-text-webpack-plugin');
-const version              = require('./package.json').version;
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const version = require('./package.json').version;
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   context: path.resolve(__dirname, './src'),
@@ -17,14 +17,16 @@ module.exports = {
   },
 
   plugins: [
+    new CleanWebpackPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new MiniCssExtractPlugin(),
+    new webpack.optimize.AggressiveMergingPlugin(),
     new webpack.DefinePlugin({
       'process.env':{
         'VERSION': JSON.stringify(version)
       },
       'DEV': false
     }),
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.optimize.AggressiveMergingPlugin(),
     new BundleAnalyzerPlugin({
       analyzerMode: 'static',
       // analyzerPort: 8888,
@@ -34,8 +36,6 @@ module.exports = {
       logLevel: 'info',
       openAnalyzer: false
     }),
-    new ExtractTextPlugin('[name].css'),
-    new CleanWebpackPlugin(['dist'])
   ],
 
   module: {
@@ -48,9 +48,12 @@ module.exports = {
       {
         test: /.less$/,
         // exclude: /__dev__/,
-        use: ExtractTextPlugin.extract([
-          'css-loader','postcss-loader','less-loader'
-        ])
+        use: [
+          MiniCssExtractPlugin.loader, 
+          'css-loader',
+          'postcss-loader',
+          'less-loader'
+        ]
       }
     ]
   }
